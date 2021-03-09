@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/5a53a17bfd56cb9c14000003/train/python
+
+def disarium_number(number):
+    return 'Disarium !!' if sum([int(el)**(i+1) for i,el in enumerate(str(number))]) == number else 'Not !!'
