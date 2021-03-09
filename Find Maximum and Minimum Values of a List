@@ -1,0 +1,29 @@
+https://www.codewars.com/kata/577a98a6ae28071780000989/train/python
+
+def minimum(arr):
+    min_val = arr[0]
+    for check in arr:
+        if check < min_val:
+            min_val = check 
+    return min_val
+def maximum(arr):
+    max_val = arr[0] 
+    for check in arr: 
+        if check > max_val: 
+            max_val = check 
+    return max_val
+    
+    // Another Solution
+    
+    def minimum(arr):
+    return min(arr)
+def maximum(arr):
+    return max(arr)
+    
+    // Another Solution
+    
+    def minimum(arr):
+    return sorted(arr)[0]
+
+def maximum(arr):
+    return sorted(arr)[-1]
