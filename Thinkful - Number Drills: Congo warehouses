@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5862e7c63f8628a126000e18/train/python
+
+def box_capacity(length, width, height):
+    height = height * 12 // 16
+    length = length * 12 // 16
+    width = width * 12 // 16
+    return height * length * width
