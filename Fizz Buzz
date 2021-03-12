@@ -13,3 +13,9 @@ def fizzbuzz(n):
             output.append(i)
 
     return output
+
+// Another Solution
+
+def fizzbuzz(n):
+    lst = list(range(1,n+1))
+    return ['FizzBuzz' if el%15==0 else 'Buzz' if el%5==0 else 'Fizz' if el%3==0 else el for el in lst]
