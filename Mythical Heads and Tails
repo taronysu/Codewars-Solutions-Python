@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5751aa92f2dac7695d000fb0/train/python
+
+def beasts(heads, tails):
+    # tails = orthus + hydra
+    # heads = 2 * orthus + 5 * hydra
+    hydra = (heads - 2 * tails) / 3
+    orthus = tails - hydra
+    if orthus < 0 or hydra < 0:
+        return 'No solutions'
+    return [orthus, hydra]
