@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5a55f04be6be383a50000187/train/python
+
+def special_number(number):
+    for i in str(number):
+        if int(i) > 5: return "NOT!!"
+    return "Special!!"
