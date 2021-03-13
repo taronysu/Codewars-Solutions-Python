@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5748838ce2fab90b86001b1a/train/python
+
+import math
+def square_area(A):
+    r = (A*4)/(2*math.pi)
+    s = math.pow(r,2)
+    return round(s,2)
