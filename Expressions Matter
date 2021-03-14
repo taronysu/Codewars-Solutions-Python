@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5ae62fcf252e66d44d00008e/train/python
+
+def expression_matter(a, b, c):
+    first = a * (b + c)
+    second = a * b * c
+    third = a + b + c
+    forth = (a + b) * c
+    return max(first,second,third,forth)
