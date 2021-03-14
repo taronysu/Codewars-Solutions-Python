@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/578a55517c77f535a8000064/train/python
+
+def total(n):
+    return n * (n+1) // 2
