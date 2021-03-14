@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5e9c06f95ea5b30033903194/train/python
+
+import math
+def how_bigga_ma_pizza(blob, crust): 
+    if crust == "crispy":
+         return math.sqrt(math.pow(blob,3)/6)
+    else:
+        return  math.sqrt(math.pow(blob,3)/30)
