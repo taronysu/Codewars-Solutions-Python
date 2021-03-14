@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5e030f77cec18900322c535d/train/python
+
+import math
+def minimum(a, x):
+    return min(x - a % x, a % x)
