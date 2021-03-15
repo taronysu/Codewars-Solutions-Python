@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/59619e4609868dd923000041/train/python
+
+import math
+def total_bill(s):
+    s = len(s.replace(" ", ""))
+    #s = len("".join(s.split()))
+    return (s*2) - math.floor(s/5)*2
