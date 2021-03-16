@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/585a36b445376cbc22000072/train/python
+
+def area_code(text):
+    index1 = text.index('(')
+    index2 = text.index(')')
+    return text[index1+1:index2]
