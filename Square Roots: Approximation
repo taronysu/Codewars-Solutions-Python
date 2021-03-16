@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/58475cce273e5560f40000fa/train/python
+
+def approx_root(n): 
+    base = int(n ** 0.5)
+    great_sq = (base+1)**2
+    low_sq = base ** 2
+    diff_gn = n - low_sq
+    diff_lg = great_sq - low_sq
+    res =  base + round(diff_gn/diff_lg,2)
+    return  res
