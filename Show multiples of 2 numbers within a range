@@ -2,3 +2,8 @@ https://www.codewars.com/kata/583989556754d6f4c700018e/train/python
 
 def multiples(s1,s2,s3):
     return [i for i in range(1,s3) if i%s1==0 and i%s2==0]
+    
+// Another Solution
+
+def multiples(s1,s2,s3):
+    return [i for i in range(s1,s3,s1) if i % s2 == 0]
