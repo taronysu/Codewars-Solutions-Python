@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/602afedfd4a64d0008eb4e6e/train/python
+
+def get_day(day, is_leap):
+    m = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October','November', 'December']
+    a = [31, 28 + is_leap, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    if day > (365 + is_leap):
+        return 'wrong day'
+    for i in range(12):
+        if day>a[i]:
+            day = day - a[i]
+        else:
+            return f'{m[i]}, {day}'
