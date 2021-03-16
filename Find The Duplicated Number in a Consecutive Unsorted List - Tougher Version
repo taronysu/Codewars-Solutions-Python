@@ -1,0 +1,19 @@
+https://www.codewars.com/kata/558f0553803bc3c4720000af/train/python
+
+def find_dup(arr):
+    arr.sort()
+    for i in range(1,len(arr)):
+        if arr[i] == arr[i-1]:
+            return arr[i]
+            
+// Another Solution
+
+def find_dup(arr):
+    size = len(arr) 
+    repeated = [] 
+    for i in range(size): 
+        k = i + 1
+        for j in range(k, size): 
+            if arr[i] == arr[j] and arr[i] not in repeated: 
+                repeated = arr[i]
+    return repeated 
