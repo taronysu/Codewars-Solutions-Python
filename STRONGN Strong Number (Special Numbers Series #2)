@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/5a4d303f880385399b000001/train/python
+
+def strong_num(n):
+    arr = [int(x) for x in str(n)] 
+    sum = 0
+    
+    def factorial(fn):
+        if(fn <= 1):
+            return 1
+        else:
+            return fn * factorial(fn - 1)
+        
+    for i in range(len(arr)):
+        sum += factorial(arr[i])
+    if n == sum:
+        return "STRONG!!!!"
+    else:
+        return "Not Strong !!"
