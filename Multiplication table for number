@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5a2fd38b55519ed98f0000ce/train/python
+
+def multi_table(number):
+    table = ''
+    for i in range(1,11):
+        table += f'{i} * {number} = {i*number}\n'
+    return table[:-1]
