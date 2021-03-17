@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/train/python
+
+def find_average(numbers):
+    sum_num = 0
+    for t in numbers:
+        sum_num = sum_num + t           
+    avg = sum_num / len(numbers)
+    return avg
