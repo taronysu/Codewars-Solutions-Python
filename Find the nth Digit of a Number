@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/577b9960df78c19bca00007e/train/python
+
+def find_digit(num, n):
+    num = abs(num)
+    num = str(num)
+    if n > len(num):
+        return 0
+    if n <= 0:
+        return -1
+    return int(num[-n])
