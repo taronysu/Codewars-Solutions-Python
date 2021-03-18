@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/5aa3af22ba1bb5209f000037/train/python
+
+def solve(eq):
+    res = []
+    operand = ""
+    for ch in eq:
+        if ch in ["+", "-", "*", "/"]:
+            res.append(operand)
+            res.append(ch)
+            operand = ""
+        else:
+            operand += ch
+    if operand:
+        res.append(operand)
+
+    return "".join(res[::-1])
