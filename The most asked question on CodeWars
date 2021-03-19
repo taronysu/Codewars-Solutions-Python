@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/5935ecef7705f9614500002d/train/python
+
+def detect(comment):
+    return comment.startswith('Can someone explain')
