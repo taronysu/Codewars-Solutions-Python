@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/5b5e0c0d83d64866bc00001d/train/python
+
+def say_me_operations(string_numbers):
+    arr = []
+    a = string_numbers.split()
+    a = [int(el) for el in a]
+    for i in range(2,len(a)):
+        if a[i-2]+a[i-1]==a[i]:
+            arr.append('addition')
+        elif a[i-2]-a[i-1]==a[i]:
+            arr.append('subtraction')
+        elif a[i-2]*a[i-1]==a[i]:
+            arr.append('multiplication')
+        elif a[i-2]//a[i-1]==a[i]:
+            arr.append('division')
+    return ', '.join(arr)
