@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/59759761e30a19cfe1000024/train/python
+
+def aa_percentage(s,lst=["A", "I", "L", "M", "F", "W", "Y", "V"]):
+    n = round(sum([s.count(el) for el in lst])/len(s) * 100)
+    return n
