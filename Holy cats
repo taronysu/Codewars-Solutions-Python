@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/58ebfa6ef7cda1a3d4000048/train/python
+
+def holycats(cats):
+        return [m for m in cats if m not in ('wicked','normal')]
