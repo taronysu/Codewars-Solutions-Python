@@ -1,0 +1,31 @@
+https://www.codewars.com/kata/57a37f3cbb99449513000cd8/train/python
+
+import re
+def get_number_from_string(string):
+    nums = ''.join(re.findall("\d", string))
+    return int(nums)
+    
+// Another Solution
+
+def get_number_from_string(string):
+        return int(''.join(n for n in string if n.isdigit()))
+        
+// Another Solution
+
+def get_number_from_string(string):
+    return int(''.join(filter(str.isdigit, string)))
+    
+// Another Solution
+
+def get_number_from_string(string):
+    nums = ''
+    for el in string:
+        if el.isdigit():
+            nums += el
+    return int(nums)
+    
+// Another Solution
+
+import re
+def get_number_from_string(string):
+        return int(re.sub(r'\D', '', string))
