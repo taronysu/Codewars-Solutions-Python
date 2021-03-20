@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/57eae65a4321032ce000002d/train/python
+
+def fake_bin(x):
+        return ''.join('0' if i in '01234' else '1' for i in x)
+        
+// Another Solution
+
+def fake_bin(x):
+    str = ''
+    for el in x:
+        if int(el) < 5:
+            str+='0'
+        else:
+            str+='1'
+    return str
+    
+// Another Solution
+
+import re
+def fake_bin(x):
+    x = re.sub(r'[1-4]', '0', x)
+    x = re.sub(r'[5-9]', '1', x)
+    return x
