@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/57a1fd2ce298a731b20006a4/train/python
+
+def is_palindrome(s):
+    s = s.lower()
+    str = ''
+    for i in range((len(s)-1),-1,-1):
+        str += s[i]
+    return s == str
+    
+// Another Solution
+
+def is_palindrome(s):
+    return s.lower() == s[::-1].lower()
