@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/58356a94f8358058f30004b5/train/python
+
+def fly_by(lamps, drone):
+    if len(drone) > len(lamps):
+        return 'o' * len(lamps)
+    else:
+        return 'o' * len(drone) + 'x' * (len(lamps) - len(drone))
