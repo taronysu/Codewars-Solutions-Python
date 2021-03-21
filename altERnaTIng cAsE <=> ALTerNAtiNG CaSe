@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/56efc695740d30f963000557/train/python
+
+def to_alternating_case(string):
+    return  string.swapcase()
+    
+// Another Solution
+
+def to_alternating_case(string):
+    str = ""
+    for i in string:
+        if i.isupper():
+            str += i.lower()
+        else:
+            str += i.upper()
+    return str
