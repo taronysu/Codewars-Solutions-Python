@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/58d3dd53b0fe8c9ac10000b3/train/python
+
+def removeO(string):
+    return string.replace('o','')
+    
+// Another Solution
+
+def removeO(string):
+        return ''.join(l for l in string if l != 'o')
