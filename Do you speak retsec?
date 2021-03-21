@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5516ab668915478845000780/train/python
+
+import math
+def reverse_by_center(s):
+    length = math.floor(len(s) / 2)
+    firstPart = s[0:length]
+    secondPart = s[length:]
+    if len(s) % 2 != 0:
+        secondPart = s[length + 1:]
+        return secondPart + s[length] + firstPart
+    else:
+         return  secondPart + firstPart
