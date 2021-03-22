@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5f8a15c06dbd530016be0c19/train/python
+
+def duplicate_sandwich(arr):
+    indexs =  [i for i,el in enumerate(arr) if arr.count(el)==2]
+    a = indexs[0]
+    b = indexs[1]
+    return arr[a+1:b]
