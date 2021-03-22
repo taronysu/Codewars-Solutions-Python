@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5208fc3cb613bc725f000142/train/python
+
+def solution(st, limit):
+    if limit < len(st):
+            return st[:limit] + '...'
+    return st
