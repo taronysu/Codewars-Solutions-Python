@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/57193694938fcdfe3a001dd7/train/python
+
+import re
+def ipValidator(ip):
+    ip = ip.split('.')
+    return len([el for el in ip if el.isdigit() and 0<=int(el)<=255]) == 4 and len(ip) == 4
