@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5f8dd79aa962b600335f7577/train/python
+
+def longest_sequence(arr, elem):
+    a = ''.join([str(el) if el == elem else '*' for el in arr]).split('*')
+    return max([len(el)//len(str(elem)) for el in a])
