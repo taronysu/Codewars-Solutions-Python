@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/5f5da7a415fbdc0001ae3c69/train/python
+
+def is_in_middle(sequence):
+        return 'abc' in sequence[((len(sequence)-1) // 2) - 1 : ((len(sequence)+2) // 2) + 1]
