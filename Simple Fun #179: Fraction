@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/58b8db810f40ea7788000126/train/python
+
+def gcd(a,b):
+    while a!=b:
+        if b > a:
+            b -= a
+        else:
+            a -= b
+    return a
+def fraction(a, b):
+    nod = gcd(a,b)
+    a = a / nod
+    b = b / nod
+    return a + b
