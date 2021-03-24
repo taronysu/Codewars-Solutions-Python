@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5bb3e299484fcd5dbb002912/train/python
+
+def pyramid(n):
+    lvl = 0
+    while n  > 0:
+        lvl += 1
+        n -= lvl   
+    return lvl if  n == 0 else lvl - 1
