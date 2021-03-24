@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/59126992f9f87fd31600009b/train/python
+
+def whoseMove(lp, win):
+    if lp == 'black' and win == False:
+        return 'white'
+    elif lp == 'white' and win == False:
+        return 'black'
+    elif lp == 'black' and win == True:
+        return 'black'
+    elif lp == 'white' and win == True:
+        return 'white'
