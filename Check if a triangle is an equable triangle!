@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/57d0089e05c186ccb600035e/train/python
+
+import math
+def equable_triangle(a,b,c):
+    if a > b+c or b > a+c or c > a+b:
+        return False
+    p = a + b + c
+    s = p / 2
+    a = math.sqrt(s * (s-a) * (s-b) * (s-c))
+    return a == p
