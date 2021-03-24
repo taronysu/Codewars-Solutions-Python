@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/567bed99ee3451292c000025/train/python
+
+def is_vowel(s): 
+    return True if s.lower() in ('a','e','o','i','u') else False
