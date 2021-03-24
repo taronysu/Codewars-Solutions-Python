@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/598ab63c7367483c890000f4/train/python
+
+def string_task(s):
+    s = s.lower()
+    vowels = ('a', 'e', 'i', 'o', 'u','y')  
+    for x in s:
+        if x in vowels: 
+            s = s.replace(x, "")
+    str = ''
+    for el in s:
+        str+='.' + el
+    return str
