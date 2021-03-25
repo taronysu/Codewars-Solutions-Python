@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/5bc9951026f1cdc77400011c/train/python
+
+import math
+def baby_count(x):
+    b = 0
+    a = 0
+    y = 0
+    for el in x:
+        if el == 'b' or el == 'B':
+            b += 1
+        if el == 'a' or el == 'A':
+            a += 1
+        if el == 'y' or el == 'Y':
+            y += 1
+    babies = min(a, y, math.floor(b / 2))
+    return babies if babies > 0 else "Where's the baby?!"
