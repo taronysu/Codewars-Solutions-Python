@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5a2b7edcb6486a856e00005b/train/python
+
+def check_vowel(string, position):
+    string = string.lower()
+    if position > len(string) or position < 0:
+        return False
+    if string[position] in ['a','o','u','i','e']:
+        return True
+    return False
