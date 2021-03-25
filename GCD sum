@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5dd259444228280032b1ed2a/train/python
+
+def solve(s,g):
+    if s % g != 0:
+        return -1
+    a = min(g,s-g)
+    b = s - a
+    return (a,b)
