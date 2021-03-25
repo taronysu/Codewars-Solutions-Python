@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/57b9fc5b8f5813384a000aa3/train/python
+
+def calculate(string):
+    nums = [int(s) for s in string.split() if s.isdigit()]
+    return sum(nums) if 'gains' in string else nums[0] - nums[1]
