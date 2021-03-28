@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/55a996e0e8520afab9000055/train/python
+
+def cookie(x):
+    s = "Who ate the last cookie? It was"
+    if type(x) is str:
+        return f"{s} Zach!"
+    elif type(x) is float or type(x) is int:
+        return f"{s} Monica!"
+    else:
+        return f"{s} the dog!"
