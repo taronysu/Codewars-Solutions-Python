@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/563cf89eb4747c5fb100001b/train/python
+
+def remove_smallest(numbers):
+    if len(numbers) < 1:
+        return []
+    else:
+        res = numbers.copy()
+        res.remove(min(numbers))
+        return res
