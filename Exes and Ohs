@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/55908aad6620c066bc00002a/train/python
+
+def xo(s):
+    s = s.lower()
+    x=0
+    o=0
+    for i in range(len(s)):
+        if s[i] == 'x':
+            x+=1
+        if s[i] == 'o':
+            o+=1
+    if x==o:
+        return True
+    else :
+        return False
