@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/59cfc000aeb2844d16000075/train/python
+
+def capitalize(s):
+    first = ''
+    for i,el in enumerate(s):
+        if i%2==0:
+            first+=el.upper()
+        else:
+            first+=el
+    second = ''
+    for i,el in enumerate(s):
+        if i%2!=0:
+            second+=el.upper()
+        else:
+            second+=el
+    return [first,second]
