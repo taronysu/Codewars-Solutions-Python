@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5630d1747935943168000013/train/python
+
+def score_to_tally(score):
+    al = ['','a','b','c','d','e']
+    res = ''
+    while score >= 5:
+        res = res + 'e <br>'
+        score -= 5;
+    res += al[score]
+    return res
