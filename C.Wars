@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/55968ab32cf633c3f8000008/train/python
+
+def initials(name):
+    names = name.title().split()
+    length = len(names) - 1
+    return '.'.join(el[0] if length != i else el for i, el in enumerate(names))
+    
+// Another Solution 
+
+def initials(name):
+    s = ""
+    name = name.split()
+    length = len(name)
+    for i in range(0,length-1):
+        s += name[i][0].upper() + "."
+    return s + name[-1].capitalize()
