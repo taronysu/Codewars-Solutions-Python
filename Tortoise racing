@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/55e2adece53b4cdcb900006c/train/python
+
+import math
+def race(v1, v2, g):
+    if v1 >= v2:
+        return None
+    time = g/(v2-v1)
+    time_sec = time * 3600
+    hour = math.floor(time_sec/3600)
+    min = math.floor((time_sec%3600)/60)
+    sec = math.floor(time_sec%60)
+    return [hour,min,sec]
