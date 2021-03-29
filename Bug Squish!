@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5a21f943c5e284d4340000cb/train/python
+
+def debug(s):
+    withoutbug = s.replace('bugs','*')
+    word=withoutbug.replace('bug','')
+    res=word.replace('*','bugs')
+    return res
