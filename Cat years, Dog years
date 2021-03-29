@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/5a6663e9fd56cb5ab800008b/train/python
+
+def human_years_cat_years_dog_years(human_years):
+    cat_yrs = 0
+    dog_yrs = 0
+    first = 15
+    second = 9
+    if human_years == 1:
+        cat_yrs += first
+        dog_yrs +=first
+    elif human_years == 2:
+        cat_yrs = first + second
+        dog_yrs = first + second
+    elif human_years >= 3:
+        cat_yrs = first + second + 4 * human_years - 8
+        dog_yrs = first + second + 5 * human_years - 10
+    return [human_years,cat_yrs,dog_yrs]
