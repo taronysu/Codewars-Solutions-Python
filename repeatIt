@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/557af9418895e44de7000053/train/python
+
+def repeat_it(string,n):
+    if type(string) is str:
+        return string * n
+    else:
+        return  "Not a string"
