@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/56747fd5cb988479af000028/train/python
+
+import math
+def get_middle(s):
+    length = math.floor(len(s) / 2)
+    if len(s) % 2 != 0:
+        return s[length]
+    else:
+        return s[length-1:length+1]
