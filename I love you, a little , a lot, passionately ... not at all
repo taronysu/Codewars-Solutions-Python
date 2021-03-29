@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/57f24e6a18e9fad8eb000296/train/python
+
+def how_much_i_love_you(nb_petals):
+    arr = ['I love you', 'a little', 'a lot', 'passionately', 'madly', 'not at all']
+    for i in range(nb_petals):
+        arr.append(arr[i])
+    return arr[nb_petals - 1]
