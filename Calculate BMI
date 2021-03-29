@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57a429e253ba3381850000fb/train/python
+
+def bmi(weight, height):
+    bm = weight / (height ** 2)
+    if bm <= 18.5:
+        return 'Underweight'
+    elif bm <=25:
+        return 'Normal'
+    elif bm <= 30:
+        return 'Overweight'
+    return 'Obese'
