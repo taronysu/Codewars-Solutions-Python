@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/python
+
+def persistence(n):
+    count = 0
+    temp = 1
+    while len(str(n)) > 1:
+        for num in str(n):
+            temp *= int(num)
+        n = temp
+        temp = 1
+        count += 1
+    return count
