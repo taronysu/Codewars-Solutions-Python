@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/5575ff8c4d9c98bc96000042/train/python
+
+def pattern(n):
+    total = ''
+    s = ''
+    s2 = ''
+    w = n * 2 - 1
+    for i in range(1,n+1):
+        if i > 9:
+            j = i%10
+        else:
+            j = i
+        s += str(j)
+        s2= s + s[::-1][1:]
+        total += s2.center(w) + '\n'
+    return total[:-1]
