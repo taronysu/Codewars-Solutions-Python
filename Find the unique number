@@ -1,0 +1,20 @@
+https://www.codewars.com/kata/585d7d5adb20cf33cb000235/train/python
+
+def find_uniq(arr):
+    counts = {}
+    for item in arr:
+        if item in counts:
+            counts[item] += 1
+        else:
+            counts[item] = 1
+
+    for item in arr:
+        if counts[item] == 1:
+            return item
+
+    return -1
+    
+// Another Solution
+
+def find_uniq(arr):
+    return [el for el in set(arr) if arr.count(el) == 1][0] 
