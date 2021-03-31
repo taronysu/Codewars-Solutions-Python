@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/544d114f84e41094a9000439/train/python
+
+def powerof4(n):
+    if type(n)!= int:
+        return False
+    i = 0
+    while 4 ** i < n:
+        i += 1
+    return 4 ** i == n
