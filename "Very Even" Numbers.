@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/58c9322bedb4235468000019/train/python
+
+def is_very_even_number(n):
+    if n == 0:
+        return True
+    return (n - 1) % 9 % 2 != 0
