@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/59f7fc109f0e86d705000043/train/python
+
+def divisible_by_three(st): 
+    s = 0
+    for i in st:
+        s += int(i)
+    while s > 0:
+        s -= 3
+    if s == 0:
+        return True
+    return False
