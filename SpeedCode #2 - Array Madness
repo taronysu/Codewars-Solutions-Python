@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/56ff6a70e1a63ccdfa0001b1/train/python
+
+def array_madness(a,b):
+    s = 0
+    cube = 0
+    for el in a:
+        s += el ** 2
+    for el in b:
+        cube += el ** 3
+    return cube < s
