@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/563b1f55a5f2079dc100008a/train/python
+
+def get_larger_numbers(a, b):
+    res = []
+    for i in range(len(a)):
+        if a[i]>b[i]:
+            res.append(a[i])
+        else:
+            res.append(b[i])
+    return res
