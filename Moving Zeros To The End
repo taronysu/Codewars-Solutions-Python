@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/52597aa56021e91c93000cb0/train/python
+
+def move_zeros(array):
+    res = []
+    count_of_zeros = array.count(0)
+    for el in array:
+        if el != 0:
+            res.append(el)
+    res.extend([0] * count_of_zeros)
+    return res
