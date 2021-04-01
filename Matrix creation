@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5a34da5dee1aae516d00004a/train/python
+
+def get_matrix(n):
+    res = []
+    for i in range(n):
+        arr = []
+        for j in range(n):
+            if i == j:
+                arr.append(1)
+            else:
+                arr.append(0)
+        res.append(arr)
+    return res
