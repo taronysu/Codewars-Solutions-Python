@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/54da539698b8a2ad76000228/train/python
+
+def is_valid_walk(walk):
+    n = walk.count('n')
+    w = walk.count('w')
+    s = walk.count('s')
+    e = walk.count('e')
+    print(n,w,s,e)
+    if n == s and w == e and n + w + s + e == 10:
+        return True
+    return False
