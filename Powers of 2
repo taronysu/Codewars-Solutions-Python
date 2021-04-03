@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/57a083a57cb1f31db7000028/train/python
+
+def powers_of_two(n):
+    pof2 = []
+    for i in range(n+1):
+        pof2.append(2**i)
+    return pof2
