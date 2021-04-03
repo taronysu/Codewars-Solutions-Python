@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/552c028c030765286c00007d/train/python
+
+def iq_test(numbers):
+    odd_even = [int(n) % 2 for n in numbers.split()]
+    if sum(odd_even) == 1:
+        return odd_even.index(1) + 1
+    else:
+        return odd_even.index(0) + 1
