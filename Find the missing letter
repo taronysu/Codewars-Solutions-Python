@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5839edaa6754d6fec10000a2/train/python
+
+def find_missing_letter(chars):
+    arr = set(list(range(ord(chars[0]), ord(chars[-1])+1)))
+    chars = set([ord(el) for el in chars])
+    return chr(list(arr-chars)[0])
