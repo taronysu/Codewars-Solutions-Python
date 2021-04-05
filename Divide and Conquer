@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57eaec5608fed543d6000021/train/python
+
+def div_con(x):
+    s1 = 0
+    s2 = 0
+    for el in x:
+        if type(el) == str:
+            s1 += int(el)
+        else:
+            s2 += el
+    return s2 - s1
