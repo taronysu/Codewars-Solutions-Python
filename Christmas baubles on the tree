@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5856c5f7f37aeceaa100008e/train/python
+
+def baubles_on_tree(baubles, branches):
+    if branches == 0:
+        return "Grandma, we will have to buy a Christmas tree first!"
+    balls = baubles // branches
+    rest = baubles % branches
+    arr = [balls] * branches
+    for i in range(rest):
+        arr[i] += 1
+    return arr
