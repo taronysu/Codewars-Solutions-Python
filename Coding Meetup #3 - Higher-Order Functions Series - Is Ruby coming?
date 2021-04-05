@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/5827acd5f524dd029d0005a4/train/python
+
+def is_ruby_coming(lst):
+    return len([el for el in lst if el['language'] == 'Ruby']) > 0
