@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5f55ecd770692e001484af7d/train/python
+
+def mirror(data: list) -> list:
+    x = sorted(data)
+    y = x[::-1][1:]
+    return  x + y
