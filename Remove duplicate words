@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5b39e3772ae7545f650000fc/train/python
+
+def remove_duplicate_words(s):
+    s = s.split()
+    res = []
+    [res.append(x) for x in s if x not in res]
+    return ' '.join(res)
