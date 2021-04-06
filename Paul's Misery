@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/57ee31c5e77282c24d000024/train/python
+
+def paul(x):
+    dct = {
+        'kata': 5,
+        'Petes kata': 10,
+        'life': 0,
+        'eating': 1
+    }
+    s = sum([dct[el] for el in x])
+    return  'Super happy!' if s < 40 else  'Happy!' if s < 70 else 'Sad!' if s < 100 else 'Miserable!'
+    
