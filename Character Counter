@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/56786a687e9a88d1cf00005d/train/python
+
+def validate_word(w):
+    w = w.lower()
+    return len(set([w.count(el) for el in w])) == 1
