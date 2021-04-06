@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/54da5a58ea159efa38000836/train/python
+
+def find_it(seq):
+    c = {}
+    for i in range(len(seq)):
+        n = seq[i]
+        if n not in c:
+            c[n] = 1
+        else:
+            c[n] += 1
+    for number in c:
+        if c[number] % 2 != 0:
+            return number
