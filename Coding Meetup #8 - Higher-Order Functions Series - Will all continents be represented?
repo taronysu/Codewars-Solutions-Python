@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/58291fea7ff3f640980000f9/train/python
+
+def all_continents(lst):
+    return len(set([el['continent'] for el in lst])) == 5
