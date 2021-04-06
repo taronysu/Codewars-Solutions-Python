@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/60113ded99cef9000e309be3/train/python
+
+def separate_types(seq):
+    return {type(el):[el2 for el2 in seq if type(el2)== type(el)] for el in seq}
