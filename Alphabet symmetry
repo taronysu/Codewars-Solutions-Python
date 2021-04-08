@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/59d9ff9f7905dfeed50000b0/train/python
+
+def word(s):
+    s = s.lower()
+    al = 'abcdefghijklmnopqrstuvwxyz'
+    return len([el for i,el in enumerate(s) if i == al.index(el)])
+    
+
+def solve(arr):
+    return [word(el) for el in arr]
