@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/582c81d982a0a65424000201/train/python
+
+def arr_check(arr):
+    return  all(isinstance(el, list) for el in arr)
