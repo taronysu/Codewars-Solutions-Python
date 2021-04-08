@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/5264d2b162488dc400000001/train/python
+
+def spin_words(s):
+    return ' '.join([el if len(el) < 5 else el[::-1]  for el in s.split(' ')])
