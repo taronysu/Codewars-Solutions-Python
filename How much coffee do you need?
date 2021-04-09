@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/57de78848a8b8df8f10005b1/train/python
+
+def how_much_coffee(events):
+    arr = ['cw','CW','cat','CAT','dog','DOG', 'movie', 'MOVIE']
+    count = 0
+    for i in range(len(events)):
+        if events[i] in arr:
+            if events[i] == events[i].lower():
+                count +=1
+            else:
+                count+=2
+    return 'You need extra sleep' if count > 3 else count
