@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/58acfe4ae0201e1708000075/train/python
+
+def invite_more_women(arr):
+    men = 0
+    women = 0
+    for i in range(len(arr)):
+        if arr[i] == 1:
+            men += 1
+        else:
+            women += 1
+    return women < men
