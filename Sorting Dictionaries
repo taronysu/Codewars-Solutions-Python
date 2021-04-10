@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/53da6a7e112bd15cbc000012/train/python
+
+def sort_dict(d):
+    d = d.items()
+    return sorted(d,key = lambda el: el[1] , reverse = True)
