@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/59824f384df1741e05000913/train/python
+
+def most_common(s):
+    return ''.join(sorted(s,key = lambda el: s.count(el),reverse = True))
