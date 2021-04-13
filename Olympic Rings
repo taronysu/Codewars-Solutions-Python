@@ -1,0 +1,19 @@
+https://www.codewars.com/kata/57d06663eca260fe630001cc/train/python
+
+def olympic_ring(string):
+    rings = 'abdegopqADOPQR'
+    counter = 0
+    for el in string:
+        if el in rings:
+            counter += 1
+        elif el == "B":
+            counter += 2
+    score = counter // 2
+    if score <= 1:
+        return 'Not even a medal!'
+    elif score == 2:
+        return "Bronze!"
+    elif score == 3:
+        return 'Silver!'
+    else:
+        return 'Gold!'
