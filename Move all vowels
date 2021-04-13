@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/56bf3287b5106eb10f000899/train/python
+
+def move_vowels(input): 
+    cons = [el for el in input if el not in 'aouie']
+    vowel = [el for el in input if el in 'aeoui']
+    return ''.join(cons+vowel)
