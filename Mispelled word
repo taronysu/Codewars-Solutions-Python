@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5892595f190ca40ad0000095/train/python
+
+def mispelled(word1,word2):
+    count = 0
+    if word1 == word2 or (word1 in word2 or word2 in word1)  and abs(len(word1) - len(word2)) == 1:
+        return True
+    elif len(word1) != len(word2):
+        return False
+    for i in range(len(word1)):
+        if word1[i] != word2[i]:
+            count += 1
+    return count <= 1
