@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5b39e91ee7a2c103300018b3/train/python
+
+def remove_consecutive_duplicates(s):
+    s = s.split(" ")
+    return " ".join(s[i] for i in range(len(s)) if i == 0 or s[i] != s[i - 1])
