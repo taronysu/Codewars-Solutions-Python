@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5412509bd436bd33920011bc/train/python
+
+def maskify(cc):
+    last4 = cc[-4:]
+    msk = last4.rjust(len(cc),'#')
+    return msk
+    
+// Another Solution
+
+def maskify(cc):
+    return '#' * (len(cc) - 4) + cc[-4:]
