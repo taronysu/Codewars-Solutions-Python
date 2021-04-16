@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/5650ab06d11d675371000003/train/python
+
+def split_in_parts(s, p_l): 
+    return ' '.join([s[i:i+p_l] for i in range(0,len(s),p_l)])
