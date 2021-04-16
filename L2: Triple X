@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/568dc69683322417eb00002c/train/python
+
+def triple_x(s):
+    if 'x' not in s:
+        return False
+    first_index = s.index('x')   
+    return s[first_index + 1: first_index + 3] == 'xx'
