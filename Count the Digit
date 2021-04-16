@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/566fc12495810954b1000030/train/python
+
+def nb_dig(n, d):
+    sq = ''.join([str(el * el) for el in range(n+1)])
+    return sq.count(str(d))
