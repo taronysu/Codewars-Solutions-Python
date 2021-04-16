@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/58640340b3a675d9a70000b9/train/python
+
+def remove_vowels(s):
+        return ''.join([letter for letter in s if letter not in 'aeiou'])
