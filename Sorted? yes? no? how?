@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/580a4734d6df748060000045/train/python
+
+def is_sorted_and_how(arr):
+    s = sorted(arr)
+    ss = sorted(arr)[::-1]
+    if s == arr:
+        return 'yes, ascending'
+    elif ss == arr:
+        return 'yes, descending'
+    else:
+        return 'no'
