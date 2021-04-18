@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5a29a0898f27f2d9c9000058/train/python
+
+def solve(s):
+    upper = len([el for el in s if el.isupper()])
+    lower = len([el for el in s if el.islower()])
+    numbers = len([el for el in s if el.isdigit()])
+    sp = len(s) - upper - lower - numbers
+    return [upper,lower,numbers,sp]
