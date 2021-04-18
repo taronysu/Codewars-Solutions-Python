@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5a995c2aba1bb57f660001fd/train/python
+
+def scrolling_text(text):
+        text = text.upper()
+        return [ str(text[i:]) + str(text[:i]) for i, el in enumerate(text)]
