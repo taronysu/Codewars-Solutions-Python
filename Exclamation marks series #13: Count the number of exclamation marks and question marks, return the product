@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/57fb142297e0860073000064/train/python
+
+def product(s):
+    ex = s.count('!')
+    ques = s.count('?')
+    return ex * ques
