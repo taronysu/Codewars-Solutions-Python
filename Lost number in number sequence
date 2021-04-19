@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/595aa94353e43a8746000120/train/python
+
+def find_deleted_number(arr, mixed_arr):
+    for i in range(len(arr)):
+        if arr[i]  not in mixed_arr:
+            return arr[i]
+    return 0
