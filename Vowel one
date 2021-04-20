@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/580751a40b5a777a200000a1/train/python
+
+def vowel_one(s):
+    return ''.join('1' if el in 'aeiou' else '0' for el in s.lower())
