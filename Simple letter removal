@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5b728f801db5cec7320000c7/train/python
+
+def solve(s,k):
+    st = sorted(s)[0:k]
+    for i in range(min(len(s),k)):
+        s = s.replace(st[i], '', 1)
+    return s
