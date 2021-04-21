@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/58ae6ae22c3aaafc58000079/train/python
+
+def permute_a_palindrome (input): 
+    d = {}
+    for el in input:
+        if  el in d:
+            d[el] += 1
+        else:
+            d[el] = 1
+    odd = 0
+    for key in d:
+        if d[key] % 2 == 1:
+            odd += 1
+    return odd <= 1
