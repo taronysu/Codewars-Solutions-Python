@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/558ffec0f0584f24250000a0/train/python
+
+def decode(s):
+    if type(s) != str:
+        return 'Input is not a string'
+
+    abc = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'; 
+    cba = 'zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA';
+    res = ''
+    for  i in range(len(s)):
+        if s[i] in cba:
+            res += str(abc[cba.index(s[i])])
+        else:
+            res += str(s[i])
+    return res
