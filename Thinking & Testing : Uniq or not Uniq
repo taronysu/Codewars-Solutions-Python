@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/56d949281b5fdc7666000004/train/python
+
+def testit(a, b):
+    a = set(a)
+    b = set(b)
+    return sorted(list(a) + list(b))
