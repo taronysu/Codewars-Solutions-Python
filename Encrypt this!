@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5848565e273af816fb000449/train/python
+
+def encrypt_this(text):
+     return ' '.join(str(ord(l[0])) + l[2:][-1:] + l[2:len(l)-1] + l[1:2]
+                   for l in text.split())
