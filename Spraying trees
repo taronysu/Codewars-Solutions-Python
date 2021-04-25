@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5981a139f5471fd1b2000071/train/python
+
+def task(w,n,c):
+    days = {'Monday':'James',
+            'Tuesday': 'John', 
+            'Wednesday':'Robert', 
+            'Thursday':'Michael',
+            'Friday': 'William'
+            }
+    return f"It is {w} today, {days[w]}, you have to work, you must spray {n} trees and you need {c*n} dollars to buy liquid"
