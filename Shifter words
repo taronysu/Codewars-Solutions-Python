@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/603b2bb1c7646d000f900083/train/python
+
+def shifter(st): 
+    count = 0
+    base = 'HINOSXZMW'
+    st=st.split()
+    s = set(st)
+    for word in s:
+        match = all([letter in base  for letter in word ])
+        count += match
+    return count
