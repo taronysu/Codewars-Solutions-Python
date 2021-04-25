@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/56576f82ab83ee8268000059/train/python
+
+def spacey(array):
+    arr =[]
+    for i in range(len(array)):
+        arr.append(array[:i+1])
+    return ([''.join(el) for el in arr])
