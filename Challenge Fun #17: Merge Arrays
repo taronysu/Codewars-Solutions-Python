@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/58b665c891e710a3ec00003f/train/python
+
+def merge_arrays(a, b):
+    unique1 = list(set(a))
+    unique2 = list(set(b))
+    c = set(unique1 + unique2)
+    u = set([el for el in a if el in b and a.count(el) != b.count(el)])
+    return sorted(list(c - u))
