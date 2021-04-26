@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/55805ab490c73741b7000064/train/python
+
+def make_backronym(acronym):
+    acronym = acronym.upper()
+    return ' '.join([dictionary[el] for el in acronym])
