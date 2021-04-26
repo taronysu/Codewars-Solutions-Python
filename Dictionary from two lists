@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/5533c2a50c4fea6832000101/train/python
+
+def createDict(keys, values):
+     return dict(zip(keys, values + [None] * (len(keys) - len(values))))
