@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/56a29b237e9e997ff2000048/train/python
+
+rooms = {
+    'room1': {
+    'name': 'Joe', 'description': 'python', 'completed': False },
+    'room2': {
+    'name': 'Alex', 'description': 'js', 'completed': True },
+    'room3': {
+    'name': 'Trump', 'description': 'psresident', 'completed': True }
+        }
