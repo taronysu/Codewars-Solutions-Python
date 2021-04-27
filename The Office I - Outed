@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/57ecf6efc7fe13eb070000e1/train/python
+
+def outed(meet, boss):
+    s = sum([meet[el] for el in meet if el != boss])
+    d = sum(meet[el] * 2 for el in meet if el == boss)
+    score  = (s + d) /len(meet)
+    if score <= 5:
+        return  'Get Out Now!'
+    else:
+        return 'Nice Work Champ!'
