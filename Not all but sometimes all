@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/564ab935de55a747d7000040/train/python
+
+def remove(str, what):
+    for key in what:
+        for i in range(what[key]):
+            str = str.replace(key, '',1)
+    return str
