@@ -1,0 +1,25 @@
+https://www.codewars.com/kata/57e2afb6e108c01da000026e/train/python
+
+def expression_out(exp):
+    dict = {"+" : "Plus",
+            "-" :  "Minus",
+            "*"  : "Times",
+            "/"  : "Divided By",
+            "**" : "To The Power Of",
+            "="  : "Equals",
+           "!="  :  "Does Not Equal"}
+    numbers = {'0': 'Zero', 
+          '1': 'One', 
+          '2': 'Two',
+          '3': 'Three',
+          '4': 'Four',
+          '5': 'Five', 
+          '6': 'Six', 
+          '7': 'Seven', 
+          '8': 'Eight',
+          '9': 'Nine' , 
+          '10': 'Ten', }
+    exp = exp.split()
+    if exp[1] not in dict:
+        return "That's not an operator!"
+    return f"{numbers[exp[0]]} {dict[exp[1]]} {numbers[exp[2]]}"
