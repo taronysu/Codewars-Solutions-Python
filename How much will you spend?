@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/585d7b4685151614190001fd/train/python
+
+def get_total(costs, items, tax):
+    return round(sum([costs[n] for n in items if n in costs]) * (1 + tax), 2)
