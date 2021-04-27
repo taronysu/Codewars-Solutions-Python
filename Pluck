@@ -1,0 +1,19 @@
+https://www.codewars.com/kata/530017aac7c0f49926000084/train/python
+
+def pluck(objs, name): 
+    res = []
+    for el in objs:
+        if name in el:
+            res.append(el[name])
+        else:
+            res.append(None)
+    return res
+// Another Solution
+
+def pluck(objs, name): 
+    return [el.get(name) for el in objs]
+    
+// Another Solution
+
+def pluck(objs, name): 
+    return [el[name] if name in el else None for el in objs]
