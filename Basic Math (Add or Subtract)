@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5809b62808ad92e31b000031/train/python
+
+import re
+def calculate(s):
+    n = re.findall(r'\d+', s)
+    op = re.findall(r'(plus|minus)',s)
+    res = int(n[0])
+    for i in range(len(op)):
+        if op[i] == 'plus':
+            res += int(n[i + 1])
+        if op[i] == 'minus':
+            res -= int(n[i + 1])
+    return str(res)
