@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5680781b6b7c2be860000036/train/python
+
+def vowel_indices(word):
+    word = word.lower()
+    return [idx+1 for idx, el in enumerate(word) if el in "aeiouy"]
