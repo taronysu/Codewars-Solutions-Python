@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/56c22c5ae8b139416c00175d/train/python
+
+def match(c, job):
+    return job['max_salary']>=c['min_salary']-c['min_salary']/10
