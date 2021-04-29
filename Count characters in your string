@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/52efefcbcdf57161d4000091/train/python
+
+def count(string):
+    d = {}
+    for i in string:
+        if i in d:
+            d[i] +=1
+        else:
+            d[i]=1
+    return d
+    
+// Another Solution
+
+def count(string):
+    return {el: string.count(el) for el in string}
