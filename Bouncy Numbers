@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5769a78c6f2dea72b3000027/train/python
+
+def is_bouncy(number):
+    increase = ''.join(sorted(str(number)))
+    decrease = ''.join(sorted(str(number),reverse=True))
+    return str(number) not in [decrease,increase]
