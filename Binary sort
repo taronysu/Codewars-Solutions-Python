@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/5c8e99ba171e834117a0e905/train/python
+
+def binary_sort(strng):
+    return ''.join(sorted([nums for nums  in strng if nums in '01']))
