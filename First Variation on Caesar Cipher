@@ -1,0 +1,36 @@
+https://www.codewars.com/kata/5508249a98b3234f420000fb/train/python
+
+import math
+def moving_chr(c,shift):
+    alpha = 'abcdefghijklmnopqrstuvwxyz'
+    if c in alpha.upper():
+        alpha = alpha.upper()
+    if c in alpha:
+        i = alpha.index(c)
+        return alpha[(i + shift) % len(alpha)]
+    return c
+
+
+def moving_shift(s, shift):
+    cipher = ''
+    cipher_arr = []
+    for i,c in enumerate(s):
+        cipher += moving_chr(c,shift + i)
+    first_4 = math.ceil(len(s)/5)
+    last_1 = len(s) - 4*first_4
+    for i in range(4):
+        start_i = i * first_4
+        last_i = start_i + first_4
+        cipher_arr.append(cipher[start_i:last_i])
+    if last_1 > 0:
+        cipher_arr.append(cipher[-last_1:])
+    else:
+        cipher_arr.append('')
+    return cipher_arr
+    
+def demoving_shift(s, shift):
+    cipher = ''.join(s)
+    res = ''
+    for i,c in enumerate(cipher):
+        res += moving_chr(c,-shift-i)
+    return res
