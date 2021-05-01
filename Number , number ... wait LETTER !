@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/5782dd86202c0e43410001f6/train/python
+
+def do_math(s) :
+    arr = []
+    s = s.split()
+    for el in s:
+        alph = ''.join([l for l in el  if l.isalpha()])
+        digit = ''.join([d for d in el if d.isdigit()])
+        arr.append((alph,digit))
+    sorted_arr = sorted(arr,key = lambda x: x[0])
+    nums = [el[1] for el in sorted_arr] 
+    oper = (['+', '-' ,'*', '/'] * len(nums))[:len(s)-1]
+    result = nums[0]
+    for i in range(1,len(nums)):
+        result = str(eval(result + oper[i-1] + nums[i]))
+    return round(float((result)))
