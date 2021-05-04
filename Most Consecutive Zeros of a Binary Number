@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/59decdf40863c76ae3000080/train/python
+
+def max_consec_zeros(n):
+    n = bin(int(n))[2:]
+    n = n.split('1')
+    n = max([len(el) for el in n])
+    digits =['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve', 'Thirteen']
+    return digits[n]
