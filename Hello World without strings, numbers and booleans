@@ -1,0 +1,22 @@
+https://www.codewars.com/kata/5b0148133e9715bf6f000154/train/python
+
+def hi_all():
+    one = len([[]])
+    two = one + one
+    three = two + one
+    four = three + one
+    five = four + one
+    six = five + one
+    seven = six +one
+    eight = seven + one
+    nine = eight + one
+    ten = nine + one
+    h = chr(ten * seven + two)
+    e = chr(ten * ten + one)
+    l = chr(ten * ten + eight)
+    o = chr(ten * ten + ten + one)
+    space = chr(three * ten + two)
+    w = chr(eight * ten + seven)
+    r = chr(ten * ten + ten + four)
+    d = chr(ten * ten)
+    return h+e+l+l+o+space+w+o+r+l+d
