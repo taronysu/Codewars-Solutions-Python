@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5a946d9fba1bb5135100007c/train/python
+
+def is_prime(number):
+    for i in range(2, number):
+        if number % i == 0:
+            return False
+    return True
+
+def minimum_number(numbers):
+    s = sum(numbers)
+    while is_prime(s) != True:
+        s+=1
+    return s - sum(numbers)
