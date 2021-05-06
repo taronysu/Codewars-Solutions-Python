@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/58e0cb3634a3027180000040/train/python
+
+def sort_by_value_and_index(arr):
+    return [a[1] for a in (sorted(enumerate(arr,1),key=lambda el: el[1] * el[0]))]
