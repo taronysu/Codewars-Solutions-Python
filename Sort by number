@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5e4ee2c17770f20016d52f60/train/python
+
+def sort_by_num(s):
+    pair = [s[i:i+2] for i in range(0,len(s),2)]
+    print(pair)
+    return ''.join(sorted(pair,key = lambda x: x[1]))
