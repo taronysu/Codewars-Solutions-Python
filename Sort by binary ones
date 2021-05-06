@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/59eb28fb0a2bffafbb0000d6/train/python
+
+def get_len_of_ones(n):
+    getbinary =lambda n : bin(n)[2:].count('1')
+    return getbinary(n)
+
+def sort_by_binary_ones (val):
+    return sorted(sorted(val),key=lambda x:get_len_of_ones(x), reverse=True)
+  
