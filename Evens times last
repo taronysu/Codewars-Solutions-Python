@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5a1a9e5032b8b98477000004/train/python
+
+def even_last(numbers): 
+    if len(numbers)==0:
+        return 0
+    s=sum([el for i,el in enumerate(numbers) if i%2==0])
+    return numbers[-1]*s
