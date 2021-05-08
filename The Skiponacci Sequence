@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/580777ee2e14accd9f000165/train/python
+
+def skiponacci(n):
+    arr = [1]
+    if n != 1:
+        arr.append(1)
+    while len(arr) < n:
+         arr.append(arr[len(arr)-1] + arr[len(arr)-2])
+    for i in range(1,len(arr),2):
+        arr[i] = "skip"
+
+    return ' '.join([str(elem) for elem in arr])
