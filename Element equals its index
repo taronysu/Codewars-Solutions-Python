@@ -1,0 +1,20 @@
+https://www.codewars.com/kata/5b7176768adeae9bc9000056/train/python
+
+def index_equals_value(arr):
+    stt=0
+    end=len(arr)
+    ls=[]
+    if arr[0]==0:
+        return 0
+    if arr[0]>0:
+        return -1
+    while end-stt>1:
+        mid=(stt+end)//2
+        if arr[mid]==mid:
+            ls.append(mid)
+            end=mid
+        elif arr[mid]>mid:
+            end=mid
+        elif arr[mid]<mid:
+            stt=mid
+    return min(ls) if len(ls)>0 else -1
