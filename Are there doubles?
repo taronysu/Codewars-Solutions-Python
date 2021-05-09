@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/56a24b4d9f3671584d000039/train/python
+
+def double_check(strng):
+    strng=strng.lower()
+    for i in range(len(strng)-1):
+        if  strng[i]==strng[i+1]:
+            return True
+    return False
+    
+// Another Solution
+
+def double_check(strng):
+    s = ''
+    for letter in strng.lower():
+        if letter == s:
+            return True
+        s = letter
+    return False
