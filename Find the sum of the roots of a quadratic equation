@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/57d448c6ba30875437000138/train/python
+
+def roots(a,b,c):
+    d=b**2-4*a*c
+    if a==0:
+        return None
+    elif d<0:
+        return None 
+    return float(format(-b/a,".2f"))
