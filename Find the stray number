@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/57f609022f4d534f05000024/train/python
+
+def stray(arr):
+     for el in arr:
+        if arr.count(el) == 1:
+            return el
