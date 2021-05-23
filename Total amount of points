@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5bb904724c47249b10000131/train/python
+
+def points(g):
+    s=0
+    for i in range(len(g)):
+        if g[i][0]>g[i][2]:
+            s+=3
+        elif g[i][0]==g[i][2]:
+            s+=1
+    return s
