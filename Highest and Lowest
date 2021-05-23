@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/554b4ac871d6813a03000035/train/python
+
+def high_and_low(numbers):
+    numbers=numbers.split(' ')
+    numbers = sorted(numbers, key=int)
+    return f'{numbers[-1]} {numbers[0]}'
