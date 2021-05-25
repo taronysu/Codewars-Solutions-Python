@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/5809c661f15835266900010a/train/python
+
+def double_every_other(lst):
+        return [el * 2 if i % 2 != 0 else el for i, el in enumerate(lst)]
