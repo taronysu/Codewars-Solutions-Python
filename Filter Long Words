@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5697fb83f41965761f000052/train/python
+
+def filter_long_words(sentence, n):
+    sentence = sentence.split(' ')
+    return [el for el in sentence if len(el) > n]
