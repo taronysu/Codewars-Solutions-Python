@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/58a66c208b88b2de660000c3/train/python
+
+def missing_values(seq): 
+    x = [el for el in seq if seq.count(el) == 1][0]
+    y = [el for el in seq if seq.count(el) == 2][0]
+    return x * x * y
