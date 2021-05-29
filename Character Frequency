@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/548ef5b7f33a646ea50000b2/train/python
+
+def char_freq(message):
+    d = {}
+    for i in message:
+        if i in d:
+            d[i] += 1
+        else:
+            d[i] = 1
+    return d
