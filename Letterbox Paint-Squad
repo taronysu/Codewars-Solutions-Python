@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/597d75744f4190857a00008d/train/python
+
+def paint_letterboxes(start, finish):
+    squad = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]    
+    for i in range(start,finish+1):
+        while i != 0:
+            squad[i % 10]+=1
+            i //= 10
+    return squad
