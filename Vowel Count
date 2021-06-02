@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/python
+
+def get_count(s):
+    num_vowels = 0
+    vowels =('auoie')
+    for el in s:
+        if el in vowels:
+            num_vowels+=1
+    
+    
+    return num_vowels
