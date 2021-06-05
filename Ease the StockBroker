@@ -1,0 +1,20 @@
+https://www.codewars.com/kata/54de3257f565801d96001200/train/python
+
+def balance_statement(lst):
+    op = []
+    error = []
+    buy, sell, error_count = 0, 0, 0
+
+    for n in lst.split(", "): 
+         op.append(n.split(" "))
+    for n in op:
+        if len(n[0]) == 0 or len(n) != 4 or "." not in n[2] or "." in n[1] or n[3] != "S" and n[3] != "B":
+            error.append(" ".join(n))
+            error_count += 1
+        elif 1 < len(n) < 5 and n[3] == "B": buy += float(n[2]) * float(n[1])
+        elif 1 < len(n) < 5 and n[3] == "S": sell += float(n[2]) * float(n[1])
+        
+    if error_count == 0 or len(error[0]) == 0:
+        return "Buy: {} Sell: {}".format(int(round(buy)), int(round(sell)))
+    else: 
+        return "Buy: {} Sell: {}; Badly formed {}: {} ;".format(int(round(buy)), int(round(sell)), error_count, " ;".join(error))
