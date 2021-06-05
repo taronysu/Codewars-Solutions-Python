@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/55143152820d22cdf00001bb/train/python
+
+def count_nines(n):
+    count = 0
+    nn = [i for i in str(n)]
+    while len(nn) > 0:
+        if len(nn) == 1:
+            if nn[0] == '9':
+                count += 1
+        else:
+            count += int(nn[0]) * int(str(len(nn)-1) + '0' * (len(nn)-2))
+            if nn[0] == '9':
+                count += int(''.join(nn[1:]))+1
+        nn.pop(0)
+    return count
