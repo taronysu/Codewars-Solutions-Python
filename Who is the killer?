@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5f709c8fb0d88300292a7a9d/train/python
+
+def killer(suspect_info, dead):
+    for name, seen in suspect_info.items():
+        if set(dead) <= set(seen):
+            return name
