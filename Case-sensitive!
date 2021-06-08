@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5a805631ba1bb55b0c0000b8/train/python
+
+def case_sensitive(s):
+    upr = []
+    for el in s:
+        if el.isupper():
+            upr.append(el)
+    return [True,[]] if   all(c.islower() for c in s) else  [False,upr]
