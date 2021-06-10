@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/59e49b2afc3c494d5d00002a/train/python
+
+def sort_vowels(s):
+    if type(s) == int or s == None:
+        return ''
+    res = []
+    vowels = 'aoiueAOUIE'
+    for el in s:
+        if el  in vowels:
+            res.append('|' + el)
+        else:
+            res.append( el + '|')
+    return '\n'.join(res)
