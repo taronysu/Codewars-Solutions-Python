@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/56e3cd1d93c3d940e50006a4/train/python
+
+def make_valley(arr):
+    arr = sorted(arr,reverse = True)
+    left = []
+    right = []
+    for i in range(len(arr)):
+        if i % 2:
+            right.append(arr[i])
+        else:
+            left.append(arr[i])
+    return left + right[::-1]
+    
+// Another Solution
+                
+def make_valley(arr):
+    arr = sorted(arr,reverse = True)
+    return arr[::2] + arr[1::2][::-1]
