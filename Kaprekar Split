@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5b6ee22ac5cc71833f0010d7/train/python
+
+def kaprekar_split(n):
+    sq_num = str(n ** 2)
+    if len(sq_num) < 2:
+        return 0
+    for i in range(1,len(sq_num)):
+        if int(sq_num[:i]) + int(sq_num[i:]) == n:
+            return i
+    return -1
