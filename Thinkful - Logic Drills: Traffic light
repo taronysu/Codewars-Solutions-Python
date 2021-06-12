@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/58649884a1659ed6cb000072/train/python
+
+def update_light(c):
+    if c=='green':
+        return 'yellow'
+    elif c=='yellow':
+        return 'red'
+    elif c=='red':
+        return 'green'
