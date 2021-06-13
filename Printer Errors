@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/56541980fa08ab47a0000040/train/python
+
+def printer_error(s):
+    count = 0
+    for i in range(len(s)):
+        if s[i] > "m":
+            count += 1
+    return f"{count}/{len(s)}"
