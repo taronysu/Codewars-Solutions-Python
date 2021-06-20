@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/598c1bc6a04cd3b8dd000012/train/python
+
+def restaurant(s_tables, d_tables, v):
+    kicked_out = 0
+    half_tables = 0
+    for el in v:
+        if el == 1 and s_tables != 0:
+            s_tables -= 1
+        elif el == 1 and d_tables != 0:
+            d_tables -= 1
+            half_tables += 1
+        elif el == 2 and d_tables != 0:
+            d_tables -= 1
+        elif el == 1 and half_tables != 0:
+            half_tables -= 1
+        else:
+            kicked_out += el
+    return kicked_out
