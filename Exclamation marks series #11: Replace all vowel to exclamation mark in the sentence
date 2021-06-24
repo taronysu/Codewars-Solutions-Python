@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57fb09ef2b5314a8a90001ed/train/python
+
+def replace_exclamation(s):
+    result = ""
+    for el in s:
+        vowels = 'aouieAOUIE'
+        if el in vowels:
+            result += '!'
+        else:
+            result += el
+    return result
