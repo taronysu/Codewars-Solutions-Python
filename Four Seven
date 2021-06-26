@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5ff50f64c0afc50008861bf0/train/python
+
+def solution(n):
+    while n == 4:
+        return 7
+    while n == 7:
+        return 4
+    return 0
