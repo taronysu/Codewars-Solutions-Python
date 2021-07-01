@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/54d81488b981293527000c8f/train/python
+
+def sum_pairs(ints, s):
+    res = set()
+    for i in ints:
+        if s - i in res:
+            return [s - i, i]
+        res.add(i)
