@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/5902f1839b8e720287000028/train/python
+
+def parameter(n):
+    s = sum(int(digit) for digit in str(n))
+    p = 1
+    pp = [int(el) for el in str(n)]
+    for el in pp:
+        p *=el
+    gcd = findgcd(s, p)
+    lcm = (s * p) / gcd
+    return lcm
+
+
+def findgcd(a, b):
+    if b == 0:
+        return a
+    else:
+        return findgcd(b, a % b)
