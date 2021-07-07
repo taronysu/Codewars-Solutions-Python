@@ -1,0 +1,28 @@
+https://www.codewars.com/kata/55031bba8cba40ada90011c4/train/python
+
+def is_cubic(s):
+    n = 0
+    for el in list(s):
+        n+= int(el) ** 3
+    return n == int(s)
+
+def is_sum_of_cubes(s):
+    nums = []
+    num = ''
+    total = 0
+    lucky = ''
+    for el in s+' ':
+        if el in '0123456789' and len(num) < 3:
+            num+= el
+        if (num != '' and el not in '0123456789') or len(num) == 3:
+            nums.append(num)
+            num = ''
+            
+    for i in nums:
+        if is_cubic(i): 
+            lucky += (i + ' ')
+            total+= int(i)
+            
+    if lucky != '':
+        return lucky + str(total) + ' Lucky'
+    return 'Unlucky'
