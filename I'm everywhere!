@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/6097a9f20d32c2000d0bdb98/train/python
+
+def i(word):
+    c_v = 0
+    vowel = 'aouieAOUIE'
+    for el in word:
+        if el in vowel:
+            c_v += 1
+    if c_v >= len(word)-c_v or word[0].islower() or word.startswith('I'):
+        return 'Invalid word'
+    else:
+        return 'i' + word
