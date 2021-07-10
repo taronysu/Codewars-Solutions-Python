@@ -1,0 +1,24 @@
+https://www.codewars.com/kata/56b5afb4ed1f6d5fb0000991/train/python
+
+def sum_cub(n):
+    s = 0
+    for el in n:
+        s += int(el) ** 3
+    if s % 2 == 0:
+        return n[::-1]
+    else:
+        return n[1:] + n[0]
+
+
+def revrot(strng, sz):
+    res = []
+    if sz == 0:
+        return ''
+    for i in range(0,len(strng),sz):
+        res.append(strng[i:i+sz])
+    if len(res[-1]) < sz:
+        res.pop()
+    sol = ''
+    for el in res:
+        sol += sum_cub(el)
+    return sol
