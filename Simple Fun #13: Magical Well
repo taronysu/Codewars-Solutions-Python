@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/588463cae61257e44600006d/train/python
+
+def magical_well(a, b, n):
+    s = 0
+    for i in range(n):
+        s += (a + i) * (b + i)
+    return s
