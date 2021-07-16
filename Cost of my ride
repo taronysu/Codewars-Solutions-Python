@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/586430a5b3a675296a000395/train/python
+
+def insurance(age, size, num_of_days):
+    ins = 0
+    if age < 25:
+        ins+=10
+    if size=='economy':
+        ins
+    elif size=='medium':
+        ins+=10
+    elif size=='full-size':
+        ins+=15
+    else:
+        ins+=15
+    ins=(num_of_days*(50+ins))
+    return ins if ins >= 0 else 0
