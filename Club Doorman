@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5c563cb78dac1951c2d60f01/train/python
+
+def pass_the_door_man(word): 
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    for i in range(len(word)-1):
+        if word[i] == word[i + 1]:
+            letter = word[i]
+    return (alphabet.index(letter) + 1) * 3
