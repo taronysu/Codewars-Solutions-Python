@@ -1,0 +1,25 @@
+https://www.codewars.com/kata/5a420163b6cfd7cde5000077/train/python
+
+def nba_cup(result_sheet, to_find):
+    if to_find == '':
+        return ''
+    result_sheet = result_sheet.split(',')
+    W=0;D=0;L=0;Scored=0;Conceded=0;Points=0
+    for el in result_sheet:
+        if to_find + ' ' in el:
+            if '.' in el:
+                return 'Error(float number):' + el
+            is_host = (el.index(to_find) == 0)
+            i = 0
+            while(not el[i].isdigit()): i+= 1
+            el = el[i:]
+            el = el.split(' ')
+            n1 = int(el[0]);   n2 = int(el[-1])
+            if not is_host:
+                [n1, n2] = [n2, n1]
+            W += (n1 > n2); D += (n1 == n2); L += (n1 < n2)
+            Scored+= n1;    Conceded+= n2
+            Points+= (n1 > n2) * 3 + (n1 == n2)
+    if W + D + L == 0:
+        return to_find + ":This team didn't play!"
+    return f"{to_find}:W={W};D={D};L={L};Scored={Scored};Conceded={Conceded};Points={Points}"
