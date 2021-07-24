@@ -1,0 +1,20 @@
+https://www.codewars.com/kata/55983863da40caa2c900004e/train/python
+
+def next_bigger(n):
+    n = str(n)
+    arr = list(n)
+    i = 0
+    if all(arr[i] >= arr[i+1] for i in range(len(arr)-1)):
+           return -1
+    for i in range(len(arr)-2,-1,-1):
+        if  arr[i] < arr[i+1]:
+            h = "".join(arr[:i])
+            t = arr[i:]
+            c = int(t[0])+1
+            while str(c) not in t: 
+                c+= 1
+            c = str(c)
+            j = t.index(c)
+            h += c
+            t = "".join(sorted(t[:j] + t[j+1:]))
+            return int(h + t)
