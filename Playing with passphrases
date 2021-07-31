@@ -1,0 +1,28 @@
+https://www.codewars.com/kata/559536379512a64472000053/train/python
+
+def chars(c, n):
+    c = ord(c) + n
+    if c > ord('Z'):
+        c = c - ord('Z') + ord('A') - 1
+    elif c < ord('A'):
+        c = c + ord('Z') - ord('A')
+    return chr(c)
+
+def digits(d):
+    d = int(d)
+    d = 9 - d
+    return str(d)
+    
+def play_pass(s, n):
+    res = ''
+    for i, el in enumerate(s):
+        if el.isdigit():
+            res += digits(el)
+        elif el.isalpha():
+            if i % 2 == 0:
+                res += chars(el, n).upper()
+            else:
+                res += chars(el, n).lower()
+        else:
+            res += el
+    return res[::-1]
