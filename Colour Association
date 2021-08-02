@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/56d6b7e43e8186c228000637/train/python
+
+def colour_association(arr):
+    res=[]
+    for i in range(len(arr)):
+        a = {}
+        a[arr[i][0]]=arr[i][1]
+        res.append(a)
+    return res
