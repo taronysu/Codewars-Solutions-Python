@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/546f922b54af40e1e90001da/train/python
+
+def alphabet_position(text):
+    result = ''
+    abc = 'abcdefghijklmnopqrstuvwxyz'
+    for el in text.lower():
+        if el in abc:
+            result += ' ' + str(abc.index(el) + 1)
+    return result[1:]
