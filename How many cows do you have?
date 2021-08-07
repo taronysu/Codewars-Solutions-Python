@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/58311536e77f7d08de000085/train/python
+
+def count_cows(n):
+    if not isinstance(n, int):
+        return None
+    cows = [0]
+    for year in range(n):
+        for i in range(len(cows)):
+            cows[i]+=  1
+        num_cows = sum( [cow >= 3 for cow in cows])
+        cows += [0] * num_cows
+    return len(cows)
