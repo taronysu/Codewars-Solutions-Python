@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5274e122fc75c0943d000148/train/python
+
+def group_by_commas(n):
+    n = str(n)
+    if len(n) < 4: return n
+    t = n[:len(n)%3]
+    n = n[len(t):]
+    res = ",".join(list(map("".join, zip(*[iter(n)]*3))))
+    return res if len(t) < 1 else t + "," + res
