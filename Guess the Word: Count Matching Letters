@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5912ded3f9f87fd271000120/train/python
+
+def count_correct_characters(correct, guess):
+    if len(correct) != len(guess):
+        raise  ValueError('A very specific bad thing happened.')
+    matches = 0
+    for i in range(len(correct)):
+        if correct[i] == guess[i]:
+            matches+=1
+    return matches
