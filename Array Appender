@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/53a8a476947277a3020001cc/train/python
+
+def append_arrays(seq1, seq2):
+    return seq1 + seq2
