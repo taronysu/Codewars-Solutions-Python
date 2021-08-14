@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5803c0c6ab6c20a06f000026/train/python
+
+def swap_vowel_case(st):
+    s=''
+    v='aouie'
+    for el in st:
+        if el in v:
+            s+=el.upper()
+        elif el in 'AOUIE':
+            s+=el.lower()
+        else:
+            s+=el
+    return ''.join(s)
