@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/595519279be6c575b5000016/train/python
+
+def battle(x, y):
+    p1= sum(ord(el)-64 for el in x)
+    p2= sum(ord(el)-64 for el in y)
+    if p1>p2:
+        return x
+    if p1<p2:
+        return y
+    return 'Tie!'
