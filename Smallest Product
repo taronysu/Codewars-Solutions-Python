@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5b6b128783d648c4c4000129/train/python
+
+def smallest_product(a):
+    array = [];
+    for i in range(len(a)):
+        s = 1
+        el = a[i]
+        for j in range(len(el)):
+            s = s * el[j]
+        array.append(s)
+    min_number = min(array)
+    return min_number
