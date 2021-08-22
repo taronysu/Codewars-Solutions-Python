@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/57f222ce69e09c3630000212/train/python
+
+def well(x):
+    good_ideas = x.count('good')
+    if good_ideas > 2:
+        return  'I smell a series!'
+    elif good_ideas > 0:
+        return 'Publish!'
+    return 'Fail!'
