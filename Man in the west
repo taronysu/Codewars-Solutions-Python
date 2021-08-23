@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/59bd5dc270a3b7350c00008b/train/python
+
+def check_the_bucket(bucket):
+    for el in bucket:
+        if el == 'gold':
+            return True
+    return False
