@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/599c20626bd8795ce900001d/train/python
+
+def summy(s):
+    arr=s.split(" ")
+    num = 0
+    for i in range(len(arr)):
+        num += int(arr[i])
+    return num
+    
+// Another Solution
+
+def summy(st):
+        return eval(st.replace(' ', '+'))
