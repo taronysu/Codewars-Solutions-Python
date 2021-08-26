@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5a5915b8d39ec5aa18000030/train/python
+
+def find_missing(arr1, arr2):
+    for el in arr1:
+        if el not in arr2 or arr1.count(el)!=arr2.count(el):
+            return el
