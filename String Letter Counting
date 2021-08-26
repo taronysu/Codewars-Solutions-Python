@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/59e19a747905df23cb000024/train/python
+
+def string_letter_count(s):
+    return ''.join(b+a for a,b in{i:str(s.lower().count(i))for i in sorted(filter(str.isalpha,s.lower()))}.items())
+    
+// Another Solution 
+
+def string_letter_count(s):
+    s = s.lower()
+    res = ''
+    for i in sorted(list(set(s))):
+        if i.islower():
+            res += str(s.count(i)) + i
+    return res
