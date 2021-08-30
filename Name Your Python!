@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/53cf459503f9bbb774000003/train/python
+
+class Python:
+    def __init__(self, name):
+        self.name = name
+
+name = Python("Chiburashka")
+print(name.name)
