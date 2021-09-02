@@ -1,0 +1,22 @@
+https://www.codewars.com/kata/59d727d40e8c9dd2dd00009f/train/python
+
+def balance(book):
+    for i in book:
+        for num in '!=>,<;:}{}?':
+            if i == num:
+                book = book.replace(i, '')
+                spl = book.split('\n')
+    bal = format(round(float(spl[0]),2),'.2f')
+    arr = ['Original Balance: ' + bal]
+    for el in spl[1:]:
+        if el != '':
+            price = el.split(' ')
+            price2 = format(round(float(price.pop(-1)),2),'.2f')
+            price.append(price2)
+            price = ' '.join(price)
+            bal = format(round(float(bal)-float(price2), 2), '.2f')
+            arr.append(f'{price} Balance {bal}')         
+    total = format(round(float(spl[0])-float(bal), 2), '.2f')
+    avrg = format(round(float(total) / (len(arr)-1), 2), '.2f')
+    arr.append(f'Total expense  {total}\r\nAverage expense  {avrg}')
+    return '\r\n'.join(arr)
