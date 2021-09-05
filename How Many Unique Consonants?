@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5a19226646d843de9000007d/train/python
+
+def count_consonants(text):
+    text = list(set(text.lower()))
+    s = ''
+    for el in text:
+        if el in "qwrtyplkjhgfdszxcvbnm":
+            s+=el
+    return len(s)
