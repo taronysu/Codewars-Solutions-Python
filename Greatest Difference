@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/56b12e3ad2387de332000041/train/python
+
+def diff(arr):
+    res = [abs(eval(el)) for el in arr]
+    if all(i == 0 for i in res):
+        return False
+    return arr[res.index(max(res))]
