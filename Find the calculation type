@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5aca48db188ab3558e0030fa/train/python
+
+def calc_type(a, b, res):
+    if res == a + b:
+        return 'addition'
+    elif res == a - b:
+        return 'subtraction'
+    elif res == a * b:
+        return 'multiplication'
+    return 'division'
