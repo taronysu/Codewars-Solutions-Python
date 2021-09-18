@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5846174c5955406d02000b59/train/python
+
+def four_seasons(d):
+    if d>365:
+        return 'The year flew by!'
+    if d>=80 and d<=171:
+        return 'Spring Season'
+    elif d>=172 and d<=263:
+            return 'Summer Season'
+    elif d>=264 and d<=354:
+        return 'Autumn Season'
+    return 'Winter Season'
