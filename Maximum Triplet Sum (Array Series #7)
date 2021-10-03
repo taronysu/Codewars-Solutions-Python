@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5aa1bcda373c2eb596000112/train/python
+
+def max_tri_sum(numbers):
+    numbers = set(numbers)
+    numbers = sorted(numbers, reverse = True)
+    return sum(numbers[0:3])
+    
