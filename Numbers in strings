@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/59dd2c38f703c4ae5e000014/train/python
+
+import re
+def solve(s):
+    price = re.findall("\d+", s)
+    return max([int(el) for el in price])
