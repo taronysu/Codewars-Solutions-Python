@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5d7c7697e8ad48001e642964/train/python
+
+def cube_times(times):
+    mid_three = sorted(times)[1:4]
+    avg_mid = round(sum(mid_three)/len(mid_three),2)
+    fastest = sorted(times)[0]
+    return (avg_mid,fastest)
