@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/580a1a4af195dbc9ed00006c/train/python
+
+def equalize(arr):
+    if  arr:
+        first = arr[0]
+    a = [int(el-first) for el in arr]
+    b = ['+' + str(el) if int(el) >= 0 else str(el) for el in a ]
+    return b
