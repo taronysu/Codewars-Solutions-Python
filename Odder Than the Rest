@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5983cba828b2f1fd55000114/train/python
+
+def odd_one(arr):
+    if arr == [] or sum(arr) % 2 == 0:
+        return -1
+    return [arr.index(el) for el in arr  if el % 2][0]
