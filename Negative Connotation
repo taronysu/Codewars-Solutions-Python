@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/5ef0456fcd067000321baffa/train/python
+
+def connotation(s):
+    s = s.replace('   ',' ').replace('  ',' ').lower().split(' ')
+    first_letter = [el[0] for el in s]
+    positive = 'abcdefghijklm'
+    negative = 'nopqrstuvwxyz'
+    good = 0
+    bad = 0
+    for el in first_letter:
+        if el in positive:
+            good += 1
+        elif el in negative:
+            bad += 1
+    return True if good >= bad else False
