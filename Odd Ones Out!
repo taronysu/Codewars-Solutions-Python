@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/5d376cdc9bcee7001fcb84c0/train/python
+
+def odd_ones_out(numbers):
+    return [el for el in numbers if numbers.count(el) % 2 == 0]
