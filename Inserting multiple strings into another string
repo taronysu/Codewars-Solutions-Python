@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/52f3eeb274c7e693a600288e/train/python
+
+def insert_at_indexes(phrase, word, indexes): 
+    for i in range(len(indexes)):
+        temp = indexes[i] + len(word) * i
+        phrase=phrase[0:temp] + word + phrase[temp:]
+    return phrase
