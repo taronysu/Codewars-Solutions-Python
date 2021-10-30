@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/59b11f57f322e5da45000254/train/python
+
+def ones_complement(b):
+    result = ''
+    for i in b:
+        if i == '1':
+             result += '0'
+        else:
+             result += '1'
+    return result
+    
+// Another Solution
+
+def ones_complement(binary_number):
+        return binary_number.translate(str.maketrans("10","01"))
