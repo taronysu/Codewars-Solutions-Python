@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5b37a50642b27ebf2e000010/train/python
+
+def sum_of_a_beach(beach):
+    c = ['sand','water','fish','sun']
+    return sum([beach.lower().count(el) for el in c])
