@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/56a4addbfd4a55694100001f/train/python
+
+def validate_hello(greetings):
+    c = ['hello','ciao','salut','hallo','hola','ahoj','czesc']
+    return True if sum([greetings.lower().count(el) for el in c]) > 0 else False
