@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5258b272e6925db09900386a/train/python
+
+def numbers(*l):
+    good = []
+    for el in l:
+        if type(el) == int or type(el) == float:
+            good.append(el)
+    return len(l) == len(good)
