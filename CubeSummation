@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/550e9fd127c656709400024d/train/python
+
+def cube_sum(n, m):
+    nn = min(n,m)
+    mm = max(n,m)
+    if n == m:
+        return 0
+    arr = []
+    for el in range(nn+1,mm+1):
+        arr.append(el)
+    c = 0
+    for el in arr:
+        c += el ** 3
+    return c
