@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/57f8ff867a28db569e000c4a/train/python
+
+def kebabize(string):
+    res = ""
+    for el in string:
+        if el.isupper():
+            if res is not "":
+                res += "-{}".format(el.lower())
+            else:
+                res += el.lower()
+        if el.islower():
+            res += el
+    return res
