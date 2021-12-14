@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/59be6bdc4f98a8a9c700007d/train/python
+
+import re
+def remove_chars(s):
+    return re.sub(r'[^ a-zA-Z]', '', s)
