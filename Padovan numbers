@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5803ee0ed5438edcc9000087/train/python
+
+def padovan(n):
+    arr = [1,1,1]
+    for i in range(2,n+1):
+        arr.append(arr[i-1]+arr[i-2])
+    return arr[n]
