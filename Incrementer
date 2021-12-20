@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/590e03aef55cab099a0002e8/train/python
+
+def incrementer(nums):
+    return  [(el + i +1)%10 for el, i in enumerate(nums)]
