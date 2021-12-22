@@ -1,0 +1,19 @@
+https://www.codewars.com/kata/56dbe0e313c2f63be4000b25/train/python
+
+def vert_mirror(s):
+    result = '\n'
+    mirror = []
+    words = s.split('\n')
+    for word in words:
+        mirror.append(word[::-1])
+    return result.join(mirror)
+
+def hor_mirror(s):
+    result = '\n'
+    mirror = []
+    words = s[::-1].split('\n')
+    for word in words:
+        mirror.append(word[::-1])
+    return result.join(mirror)
+def oper(fct, s):
+    return fct(s)
