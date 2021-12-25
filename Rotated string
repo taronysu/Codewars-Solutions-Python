@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/55467aaf72494e3bdc00007f/train/python
+
+def is_rotation(s1,s2):
+    print(s1,s2)
+    size1 = len(s1)
+    size2 = len(s2)
+    if size1 != size2:
+        return False
+    t = s1 + s1
+    return True if s2 in t else False
