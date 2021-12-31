@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5ab2b6abe78eee7de600361e/train/python
+
+def subseq(needle, hay): 
+    m = len(needle)
+    n = len(hay)
+    j = 0    
+    i = 0    
+    while j < m and i < n:
+        if needle[j] == hay[i]:
+            j = j+1
+        i = i + 1
+    return j == m
