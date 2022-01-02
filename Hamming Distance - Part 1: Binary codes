@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5624e574ec6034c3a20000e6/train/python
+
+def hamming_distance(a, b):
+    r = 0
+    for i in range(len(a)):
+        if a[i] != b[i]:
+            r += 1
+    return r
