@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/56a1c074f87bc2201200002e/train/python
+
+def smaller(nums):
+    arr = []
+    for i in range(len(nums)):
+        b = nums[i]
+        count = 0
+        for j in range(i + 1,len(nums)):
+            if nums[j] < b:
+                count+=1
+        arr.append(count)
+    return arr
