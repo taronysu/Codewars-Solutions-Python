@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/569d488d61b812a0f7000015/train/python
+
+def data_reverse(data):
+    d = []
+    for i in range(0, len(data), 8):
+        d.append(data[i:i + 8])
+    return list(sum(d[::-1], []))
+    
