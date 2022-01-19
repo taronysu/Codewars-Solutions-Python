@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5a4138acf28b82aa43000117/train/python
+
+def adjacent_element_product(array):
+    a = []
+    for i in range(len(array)-1):
+        a.append(array[i] * array[i+1])
+    return max(a)
