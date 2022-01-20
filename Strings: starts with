@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5803a6d8db07c59fff00015f/train/python
+
+def starts_with(st, prefix):
+    print(st,prefix)
+    if prefix == '':
+        return True
+    if len(prefix) > len(st):
+        return False
+    return st[0] == prefix[0]
