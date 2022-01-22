@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5951d30ce99cf2467e000013/train/python
+
+def pythagorean_triple(i):
+    print(i)
+    return i[2]**2==i[0]**2+i[1]**2 or i[0]**2==i[1]**2+i[2]**2 or i[1]**2==i[0]**2+i[2]**2
