@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/57fafb6d2b5314c839000195/train/python
+
+def remove(s):
+    res = []
+    s = s.split(' ')
+    for el in s:
+        if el.count('!') != 1:
+            res.append(el)
+    return ' '.join(res)
