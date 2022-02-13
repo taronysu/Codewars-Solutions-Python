@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/55d2aee99f30dbbf8b000001/train/python
+
+def score_test(tests, right, omit, wrong):
+    a = tests.count(0)
+    b = tests.count(1)
+    c = tests.count(2)
+    return right *a + omit * b - wrong * c
