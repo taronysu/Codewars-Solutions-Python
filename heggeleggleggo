@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/55ea5304685da2fb40000018/train/python
+
+def heggeleggleggo(sen):
+    newString = ''  
+    for letter in sen:
+        if letter.lower() not in "aeiou" and letter != ' ':
+            newString+=letter+"egg"
+        else:
+            newString+=letter
+    return newString
