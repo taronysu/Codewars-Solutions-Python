@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/58941fec8afa3618c9000184/train/python
+
+def growing_plant(upSpeed, downSpeed, desiredHeight):
+    day = 0
+    h = 0
+    while h <= desiredHeight:
+        h += upSpeed
+        day += 1
+        if h <  desiredHeight:
+            h -= downSpeed
+        else:
+            return day
