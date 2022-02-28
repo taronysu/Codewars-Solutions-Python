@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/58b8c94b7df3f116eb00005b/train/python
+
+def reverse_letter(string):
+    s=''
+    ayb='abcdefghijklmnopqrstuvwxyz'
+    for el in string:
+        if el in ayb:
+            s+=el
+    return ''.join(list(reversed(s)))
