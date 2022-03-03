@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5701e43f86306a615c001868/train/python
+
+def get_issuer(number):
+    n = str(number)
+    l = len(n)
+    if n[:2] in ("34", "37") and l == 15:
+        return "AMEX"
+    elif n[:4] == "6011" and l == 16:
+        return "Discover"
+    elif 51 <= int(n[:2]) <= 55 and l == 16:
+        return "Mastercard"
+    elif n[0] == "4" and l in (13, 16):
+        return "VISA"
+    return "Unknown"
