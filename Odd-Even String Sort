@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/580755730b5a77650500010c/train/python
+
+def sort_my_string(S):
+    return ''.join(el for i, el in enumerate(S) if i % 2 == 0) + ' ' + ''.join(el for i, el in enumerate(S) if i % 2) 
