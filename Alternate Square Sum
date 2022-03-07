@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/559d7951ce5e0da654000073/train/python
+
+def alternate_sq_sum(arr):
+    s=0
+    for i in range(len(arr)):
+        if i%2==0:
+            s+=arr[i]
+        else:
+            s+=arr[i]**2
+    return s
