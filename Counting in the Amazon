@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/55b95c76e08bd5eef100001e/train/python
+
+def count_arara(n):
+    if n % 2 == 0:
+            return 'adak ' * ((n-2)//2) + 'adak'
+    return 'adak ' * (n//2) + 'anane'
