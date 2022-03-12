@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/570f6436b29c708a32000826/train/python
+
+def first_non_repeated(s):
+    for i in range(len(s)):
+        if  s.index(s[i]) == s.rindex(s[i]):
+            return s[i]
+    return None
+    
+// Another Solution
+
+def first_non_repeated(s):
+    ss = [el for el in s if s.count(el) == 1]
+    return ss[0] if ss else None
