@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/554ca54ffa7d91b236000023/train/python
+
+def delete_nth(order,max_e):
+    if not order or max_e < 1:
+        return []
+    counted = { x:0 for x in order }
+    res = []
+
+    for item in order:
+        if counted[item] < max_e:
+            counted[item] += 1
+            res.append(item)
+
+    return res
+    
+// Another Solution
+
+def delete_nth(order,n):
+    answer = []
+    for el in order:
+        if answer.count(el) < n:
+            answer.append(el)
+    return answer
