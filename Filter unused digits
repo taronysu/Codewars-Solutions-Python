@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/55de6173a8fbe814ee000061/train/python
+
+def unused_digits(*a):
+    digits = '0123456789'
+    d = ''
+    for el in a:
+        d += str(el)
+    return ''.join([el for el in digits if el not in d])
