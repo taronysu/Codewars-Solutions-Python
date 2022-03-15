@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5a662a02e626c54e87000123/train/python
+
+def extra_perfect(n):
+    res = []
+    i = 1
+    while i <= n:
+        res.append(i)
+        i+=2
+    return res
+    
+// Another Solution
+
+def extra_perfect(n):
+    return [i for i in range(n+1) if i % 2 != 0] 
