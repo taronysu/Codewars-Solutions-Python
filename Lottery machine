@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5832db03d5bafb7d96000107/train/python
+
+def unique(l):
+    unique_list = []
+    for x in l:
+        if x not in unique_list:
+            unique_list.append(x)
+    return ''.join(unique_list)
+
+
+def lottery(s):
+    nums = [el for el in s if el.isdigit()]
+    return unique(nums) if nums else 'One more run!'
