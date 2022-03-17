@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/562f91ff6a8b77dfe900006e/train/python
+
+import math
+def movie(card, ticket, perc):
+    s_a = 0
+    s_b = card
+    ticket_b = ticket
+    days = 0
+    while s_a <= math.ceil(s_b):
+        s_a += ticket
+        ticket_b *= perc
+        s_b += ticket_b
+        days += 1
+    return days
