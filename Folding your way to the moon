@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/58f0ba42e89aa6158400000e/train/python
+
+def fold_to(d):
+    if d < 0:
+        return None
+    num = 0.0001
+    result = 0;
+    while num < d:
+        result+=1
+        num *= 2
+    return result
