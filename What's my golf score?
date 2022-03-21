@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/59f7a0a77eb74bf96b00006a/train/python
+
+def golf_score_calculator(p, s):
+        return sum([int(s[i])-int(p[i]) for i in range(len(s))])
+        
+// Another Solution
+
+def golf_score_calculator(par, score):
+        return sum(map(int, score)) - sum(map(int, par))
