@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/57ed56657b45ef922300002b/train/python
+
+def broken(inp):
+    s = ''
+    for el in inp:
+        if el == '0':
+            s += '1'
+        else:
+            s += '0'
+    return s
+    
+// Another Solution
+
+def broken(inp):
+    return ''.join(['0' if d == '1' else '1' for d in inp])
