@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/582887f7d04efdaae3000090/train/python
+
+def find_senior(lst): 
+    oldest_person = lst[0]['age']
+    sen_dev = []
+    for dev in lst:
+        if dev['age'] == oldest_person:
+            sen_dev.append(dev)
+        elif dev['age'] > oldest_person:
+            oldest_person = dev['age']
+            sen_dev = []
+            sen_dev.append(dev)
+    return sen_dev
