@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/580a0347430590220e000091/train/python
+
+import math
+def area(d, l): 
+    if d == l or d < l:
+        return  "Not a rectangle"
+    other_s = math.sqrt(d**2-l**2)
+    return round(l * other_s,2)
