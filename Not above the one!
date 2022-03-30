@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5b5097324a317afc740000fe/train/python
+
+def binary_cleaner(seq):
+    first = []
+    rest = []
+    for i in range(len(seq)):
+        if seq[i] > 1:
+            rest.append(i)
+        else:
+            first.append(seq[i])
+    return (first,rest)
