@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/58ba6fece3614ba7c200017f/train/python
+
+def palindrome(num):
+    return str(num) == str(num)[::-1] if \
+    type(num) == int and num > 0 \
+    else 'Not valid'
