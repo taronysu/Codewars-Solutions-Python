@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5827bc50f524dd029d0005f2/train/python
+
+def get_first_python(list):
+    for p in list:
+        if p['language'] == 'Python':
+            return p['first_name'] + ', ' + p['country']
+    return 'There will be no Python developers'
