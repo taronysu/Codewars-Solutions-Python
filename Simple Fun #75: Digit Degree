@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/589422431a88082ea600002a/train/python
+
+def digit_degree(n):
+    c = 0
+    while n > 9:
+        n = str(n)
+        n = sum(int(el) for el in n)
+        c+=1
+    return c
