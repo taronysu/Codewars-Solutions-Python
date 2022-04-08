@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/58279e13c983ca4a2a00002a/train/python
+
+def greet_developers(lst):
+    for i in lst:
+        i['greeting']='Hi ' + i['firstName'] + ', what do you like the most about '+ i['language'] +'?'
+    return lst
