@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5a1a76c8a7ad6aa26a0007a0/train/python
+
+def lpn(num):
+    return num if num < 10 else lpn(num // 10 + num % 10)
+
+def life_path_number(birthdate):
+    s = ''.join(birthdate.split('-'))
+    res = lpn(int(s))
+    return res
