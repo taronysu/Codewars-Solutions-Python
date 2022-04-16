@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/559e5b717dd758a3eb00005a/train/python
+
+def drop_cap(s):
+    ss = []
+    s = s.split(' ')
+    for el in s:
+        if len(el) > 2:
+            ss.append(str(el).capitalize())
+        else:
+            ss.append(el)
+    return ' '.join(ss)
