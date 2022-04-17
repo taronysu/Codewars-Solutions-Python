@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/55c5b03f8c28da9a51000045/train/python
+
+def find_sum(*args):
+    for el in args:
+        if el < 0:
+            return -1
+    return sum(args)
