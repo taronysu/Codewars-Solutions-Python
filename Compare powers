@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/55b2549a781b5336c0000103/train/python
+
+import math
+def compare_powers(n1,n2):
+    x = n1[1] * math.log(n1[0])
+    y  = n2[1] * math.log(n2[0])
+    if x < y:
+        return 1
+    if y < x:
+        return -1
+    return 0
