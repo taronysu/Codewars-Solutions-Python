@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/57a1d5ef7cb1f3db590002af/train/python
+
+def fibonacci(n):
+    fibNum = [0, 1]
+    if(n<2):
+        return n
+    for i in range(2,n+1):
+        fibNum.append(fibNum[i-2]+fibNum[i-1])
+    return fibNum[len(fibNum)-1]
