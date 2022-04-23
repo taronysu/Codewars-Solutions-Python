@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/598f76a44f613e0e0b000026/train/python
+
+import re
+def sum_of_integers_in_string(s):
+    res = 0
+    nums = re.split(r'\D+',s)
+    for el in nums:
+        if el != '':
+            res += int(el)
+    return res
