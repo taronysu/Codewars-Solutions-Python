@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/59ad7d2e07157af687000070/train/python
+
+def sentencify(words):
+    s =  ' '.join(words) + '.'
+    return s[0][0].upper() + s[1:]
