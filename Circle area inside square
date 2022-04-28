@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5899aa695401a83a5c0000c4/train/python
+
+import math
+def square_area_to_circle(size):
+    r = math.sqrt(size)
+    return math.pi * (r/2) ** 2
