@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/6098205ca76224000d62a2d0/train/python
+
+# NO NUMBERS IN THE CODE!!!
+def numbers_without_numbers():
+    s = 'ilovehorses'
+    return int(str(s.index('v')) + str(s.index('o')) + str(s.index('l')) + str(s.index('h')) + str(s.index('l')) + str(s.index('e')) +str(s.index('v')) + str(s.index('o')) + str(s.index('h')))
