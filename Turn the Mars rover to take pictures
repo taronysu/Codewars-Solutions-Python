@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/588e68aed4cff457d300002e/train/python
+
+def turn(current, target):
+    if current == 'N' and target == 'E':
+        return 'right'
+    elif current == 'S' and target == 'W':
+        return 'right'
+    elif current == 'W' and target == 'N':
+        return 'right'
+    elif current == 'E' and target == 'S':
+        return 'right'
+    return 'left'
