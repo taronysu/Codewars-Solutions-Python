@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5c55ad8c9d76d41a62b4ede3/train/python
+
+def duplicates(arr):
+    ss = sorted(arr)
+    c = 0
+    for i in range(len(ss)-1):
+        if ss[i] == ss[i+1]:
+            c +=1
+            ss[i] = ''
+            ss[i+1] = ''
+    return c
