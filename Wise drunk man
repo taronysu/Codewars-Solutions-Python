@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/58e953ace87e856a97000046/train/python
+
+def wdm(talk):
+    arr = talk.split(' ')
+    ans = []
+    for i in range(len(arr)):
+        if arr[i]!= 'puke' and arr[i]!= 'hiccup' and arr[i]!= '':
+            ans.append(arr[i])
+    return ' '.join(ans)
