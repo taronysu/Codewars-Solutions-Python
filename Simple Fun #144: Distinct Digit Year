@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/58aa68605aab54a26c0001a6/train/python
+
+def distinct_digit_year(year):
+    distinct = False
+    while not distinct:
+        year += 1
+        if len(set(str(year))) == len(str(year)):
+            distinct = True
+    return year
