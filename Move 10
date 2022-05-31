@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/57cf50a7eca2603de0000090/train/python
+
+def move_ten(st):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    move10 = 'klmnopqrstuvwxyzabcdefghij'
+    d = str.maketrans(alphabet, move10)
+    return st.translate(d)
