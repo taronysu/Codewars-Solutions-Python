@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/56b7771481290cc283000f28/train/python
+
+def last_fib_digit(n):
+    n = n % 60
+    if (n <= 2):
+        return 1
+    fib1 = 1
+    fib2 = 1
+    for i in range(2,n):
+        [fib2, fib1] = [fib1, (fib1 + fib2) % 10]
+    return fib1
