@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5bbd279c8f8bbd5ee500000f/train/python
+
+import math
+def find_screen_height(width, ratio): 
+    [w, h] = ratio.split(':')
+    w = int(w)
+    h = int(h)
+    height = math.trunc(width / w * h)
+    return str(width) + 'x' + str(height) 
