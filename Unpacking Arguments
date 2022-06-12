@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/540de1f0716ab384b4000828/train/python
+
+def spread(func, args):
+    return func(args[0],args[1]) if len(args) == 2 else  func(args[0],args[1],args[2]) # lol
+// Another Solution
+
+def spread(func, args):
+    return func(*args)
