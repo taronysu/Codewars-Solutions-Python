@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/586e1d458cb711f0a800033b/train/python
+
+def process_data(data):
+    s = [el[0] - el[1] for el in data]
+    res = 1
+    for el in s:
+        res *= el
+    return res
