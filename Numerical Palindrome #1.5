@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/58e09234ca6895c7b300008c/train/python
+
+def palindrome(num,s):
+    if type(num) != int or type(s) != int or num < 0 or s < 0:
+        return 'Not valid'
+    arr = []
+    for el in range(num,10000):
+        if str(el) == str(el)[::-1]and el > 10:
+            arr.append(el)
+    return arr[0:s]
