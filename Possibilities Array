@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/59b710ed70a3b7dd8f000027/train/python
+
+def is_all_possibilities(arr):
+    l=len(arr)-1
+    return sum(arr) == l*(l+1)/2 if arr else False
