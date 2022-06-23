@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5884615cbd573356ab000050/train/python
+
+def count_sum_of_two_representations(n, l, r):
+    count = 0
+    for i in range(l,n // 2+1):
+        j = n - i
+        if j <= r:
+            count+=1
+    return count
