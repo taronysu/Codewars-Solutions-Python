@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5f7c38eb54307c002a2b8cc8/train/python
+
+def remove_parentheses(s):
+    c = 0
+    res = ""
+    for i in s:
+        if i=="(":
+            c += 1 
+        elif i==")":
+            c -= 1 
+        else:
+            if c == 0:
+                res += i 
+    return res
