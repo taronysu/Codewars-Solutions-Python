@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5701800886306a876a001031/train/python
+
+def lineup_students(string):
+    s = string.split(' ')
+    return list(reversed(sorted(s, key=lambda x: (len(x), x))))
