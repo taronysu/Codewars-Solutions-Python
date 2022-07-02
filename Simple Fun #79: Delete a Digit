@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5894318275f2c75695000146/train/python
+
+def delete_digit(n):
+    arr = [];
+    n = str(n)
+    for i in range(len(n)):
+        arr.append(n.replace(n[i],'',1))
+    return int(max(arr))
