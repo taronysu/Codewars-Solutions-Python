@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5f8341f6d030dc002a69d7e4/train/python
+
+def least_larger(a, i):
+    arr = []
+    for j in range(len(a)):
+        if (a[j] > a[i]):
+            arr.append(a[j])
+    return a.index(sorted(arr)[0]) if arr else -1
