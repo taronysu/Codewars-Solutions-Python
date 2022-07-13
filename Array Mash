@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/582642b1083e12521f0000da/train/python
+
+def array_mash(a, b):
+    return [a[i//2] if i % 2==0 else b[i//2] for i in range(0,len(a)*2)]
