@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/576400f2f716ca816d001614/train/python
+
+gcd = lambda a,b : a if not b else gcd(b, a%b)
+
+
+def reduce_fraction(f):
+    first = f[0] // gcd(f[0], f[1])
+    second = f[1] // gcd(f[0], f[1])
+    return (first,second)
