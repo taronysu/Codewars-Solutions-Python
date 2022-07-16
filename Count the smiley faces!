@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/583203e6eb35d7980400002a/train/python
+
+def count_smileys(arr):
+    smileys = [":)",";)",":-)",";-)",";~)",":~)",":D",";D",":-D",":~D",";-D",";~D"]
+    count = 0
+    for i in range(len(arr)):
+        for j in range(len(smileys)):
+            if arr[i] == smileys[j]:
+                count+=1
+    return count
