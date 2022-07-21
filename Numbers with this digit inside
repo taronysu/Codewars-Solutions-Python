@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/57ad85bb7cb1f3ae7c000039/train/python
+
+def numbers_with_digit_inside(x, d):
+    i = 1
+    count = 0
+    s = 0
+    product = 1
+    while i <= x:
+        if str(d) in str(i):
+            count+=1
+            s += i
+            product *= i
+        i+=1
+    if count:
+        return [count,s,product]
+    return [0,0,0]
