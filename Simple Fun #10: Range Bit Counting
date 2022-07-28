@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/58845748bd5733f1b300001f/train/python
+
+def range_bit_count(a, b):
+    arr = []
+    for el in range(a,b+1):
+        arr.append(el)
+    b = [bin(el)[2:] for el in arr]
+    c = [el.count('1') for el in b]
+    return sum(c)
