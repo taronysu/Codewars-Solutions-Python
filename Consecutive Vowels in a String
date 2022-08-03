@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/62a933d6d6deb7001093de16/train/python
+
+def get_the_vowels(word):
+    vowels = 'aeiou'
+    vIndex = 0
+    res = 0
+    for i in range(len(word)):
+        if word[i] == vowels[vIndex]:
+            res += 1
+            if vIndex == 4:
+                vIndex = 0
+            else:
+                vIndex +=1
+    return res
