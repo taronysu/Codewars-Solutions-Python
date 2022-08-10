@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/56bd9e4b0d0b64eaf5000819/train/python
+
+def combine(*dict):
+    res = {}
+    for el in dict:
+        for a, b in el.items():
+            res[a] = b + res.get(a, 0)
+    return res
