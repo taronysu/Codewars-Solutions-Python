@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/545af3d185166a3dec001190/train/python
+
+def each_cons(lst, n):
+    res = []
+    for i in range(0,len(lst)-n+1):
+        parts = []
+        for j in range(n):
+            parts.append(lst[i+j])
+        res.append(parts)
+    return res
