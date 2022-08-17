@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5ace2d9f307eb29430000092/train/python
+
+def modify_multiply(st, loc, num):
+    res = []
+    st = st.split()
+    for i in range(num):
+        res.append(st[loc])
+    return '-'.join(res)
