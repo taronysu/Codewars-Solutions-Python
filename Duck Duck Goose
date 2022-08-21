@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/582e0e592029ea10530009ce/train/python
+
+def duck_duck_goose(players, goose):
+    index = goose % len(players)
+    return players[index-1].name
