@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/62cecd4e5487c10028996e04/train/python
+
+import math
+def race_podium(blocks):
+    if blocks == 7:
+        return (2,4,1)
+    sec = math.ceil(blocks/3)
+    return (sec, sec + 1, blocks - sec * 2 - 1)
