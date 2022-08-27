@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/56b97b776ffcea598a0006f2/train/python
+
+def bubblesort_once(a):
+    l = [*a]
+    for i in range(len(l)-1):
+        if(l[i] > l[i+1]):
+            [l[i], l[i+1]] = [l[i+1], l[i]]
+    return l
