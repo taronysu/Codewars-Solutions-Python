@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/58880c6e79a0a3e459000004/train/python
+
+def house_numbers_sum(inp):
+    zero_index = inp.index(0)
+    return sum(inp[:zero_index])
