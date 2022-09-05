@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/552ab0a4db0236ff1a00017a/train/python
+
+import math
+def sillycase(silly):
+    l= math.ceil(len(silly) / 2)
+    return silly[0:l].lower() + silly[l:].upper()
