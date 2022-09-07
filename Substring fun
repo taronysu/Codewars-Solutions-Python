@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/565b112d09c1adfdd500019c/train/python
+
+def nth_char(words):
+    res = ''
+    for i in range(len(words)):
+        res += words[i][i]
+    return res
