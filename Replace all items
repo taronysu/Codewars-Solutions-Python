@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/57ae18c6e298a7a6d5000c7a/train/python
+
+def replace_all(seq, find, r):
+    res = []
+    for i in range(len(seq)):
+        if seq[i] == find:
+            res.append(r)
+        else:
+            res.append(seq[i]);
+    
+    if type(seq) == str:
+        return ''.join(res)
+    return res
+    
