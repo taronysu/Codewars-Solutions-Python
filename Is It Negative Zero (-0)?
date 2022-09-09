@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5c5086287bc6600001c7589a/train/python
+
+import math
+def is_negative_zero(n):
+    return math.atan2(n,-0.0) / math.pi == -1.0
