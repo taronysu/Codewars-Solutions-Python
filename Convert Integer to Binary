@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/55606aeebf1f0305f900006f/train/python
+
+def to_binary(n):
+    if (n < 0):
+        n += pow(2, 32)
+    return str(bin(n)[2:])
