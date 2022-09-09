@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/6071ef9cbe6ec400228d9531/train/python
+
+def calculator(txt):
+        s = ''.join([el for el in txt if el in '+/*-.'])
+        op = [s.index(el) for el in s if  el != '.'][0]
+        num1 = s[:op].count('.')
+        num2 = s[op+1:].count('.')
+        op = s[op]
+        if op == '+':
+            res = num1+num2
+        elif op == '-':
+            res = num1-num2
+        elif op == '*':
+            res = num1*num2
+        else:
+            res = num1//num2
+        return res *'.'
