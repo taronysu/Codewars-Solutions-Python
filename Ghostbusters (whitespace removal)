@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5668e3800636a6cd6a000018/train/python
+
+def ghostbusters(b):
+    arr = [el for el in b.split(' ')]
+    if len(arr) == 1:
+        return "You just wanted my autograph didn't you?"
+    s = ''
+    for el in b.split(' '):
+        s += el
+    return s
