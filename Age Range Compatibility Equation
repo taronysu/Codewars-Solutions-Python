@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5803956ddb07c5c74200144e/train/python
+
+import math
+def dating_range(age):
+    if age <= 14:
+        min_age = math.floor(age - 0.1 * age) 
+    else:
+        min_age = math.floor(age / 2) + 7
+    if age <= 14:
+        max_age =  math.floor(age + 0.1 * age) 
+    else:
+        max_age = math.floor((age - 7)) * 2
+    return f'{min_age}-{max_age}'
