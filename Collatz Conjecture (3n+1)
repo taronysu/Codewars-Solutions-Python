@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/577a6e90d48e51c55e000217/train/python
+
+def hotpo(n):
+    if n < 2:
+        return 0
+    return hotpo( 3 * n + 1 if n % 2 else  n / 2) + 1
