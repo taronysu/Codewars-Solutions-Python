@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5286b2e162056fd0cb000c20/train/python
+
+def collatz(n):
+    answer = [str(n)]
+    while n != 1:
+        if n % 2 == 0:
+            n = n//2
+            answer.append(str(n))
+        else:
+            n = n * 3 + 1
+            answer.append(str(n))
+    return '->'.join(answer)
