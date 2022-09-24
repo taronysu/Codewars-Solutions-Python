@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/589ebcb9926baae92e000001/train/python
+
+
+def convert(number):
+    numbers = [number[i:i+2] for i in range(0, len(number), 2)]
+    return ''.join([chr(int(el)) for el in numbers])
