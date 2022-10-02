@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/561e1e2e6b2e78407d000011/train/python
+
+import math
+def closest_pair_tonum(n):
+    for i in range(n-1,-1,-1):
+        for j in range(i-1,-1,-1):
+            if (math.sqrt(i+j) % 1 == 0 and math.sqrt(i-j) % 1 == 0 and i > 0 and j > 0):
+                return (i,j)
