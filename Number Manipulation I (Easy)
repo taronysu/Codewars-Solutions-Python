@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5890579a34a7d44f3b00009e/train/python
+
+def manipulate(n):
+    n = str(n)
+    length = len(n)
+    return int(n[:length//2] + (length//2) *'0') if length % 2 == 0 else int(n[:length//2] + (length//2+1) *'0')
