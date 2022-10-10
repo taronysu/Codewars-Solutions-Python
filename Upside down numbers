@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/59f7597716049833200001eb/train/python
+
+def solve(a, b):
+    nums = {"0": "0", "1": "1", "6": "9", "8": "8", "9":"6"}
+    res = 0
+    for i in range(a,b):
+        i = str(i)
+        t = "".join([nums[x] for x in i[::-1] if x in nums])
+        if i == t:
+            res += 1
+    return res
+    
