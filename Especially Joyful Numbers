@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/570523c146edc287a50014b1/train/python
+
+def number_joy(n):
+    n = str(n)
+    s = sum([int(el) for el in n])
+    revsd = int(str(s)[::-1])
+    return s * revsd == int(n)
