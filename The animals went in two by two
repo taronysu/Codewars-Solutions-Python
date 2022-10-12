@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/578de3801499359921000130/train/python
+
+def two_by_two(a):
+    if a == []:
+        return False
+    d = {item:a.count(item) for item in a if a.count(item) > 1}
+    d = {x: 2 for x in d}
+    return d
