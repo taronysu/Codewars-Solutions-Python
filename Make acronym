@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/57a60bad72292d3e93000a5a/train/python
+
+def to_acronym(s):
+    return ''.join([el[0].upper() for el in s.split()])
