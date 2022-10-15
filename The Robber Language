@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/629e4d5f24b98110a83b2d0d/train/python
+
+def robber_encode(s):
+    cl = 'bcdfghjklmnpqrstvwxzy'
+    cu = 'BCDFGHJKLMNPQRSTVWXYZY'
+    robber = ''
+    for l in s:
+        if l in cl:
+            robber += l + 'o' + l
+        elif l in cu:
+            robber += l + 'O' + l
+        else:
+            robber += l
+    return robber  
