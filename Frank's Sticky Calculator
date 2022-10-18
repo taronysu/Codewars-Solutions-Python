@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5900750cb7c6172207000054/train/python
+
+def sticky_calc(op, val1, val2):
+    val1 = round(val1)
+    val2 = round(val2)
+    val3 = int(str(val1) + str(val2))
+    if op == '+':
+        return val2 + val3 
+    elif op == '-':
+        return val3 - val2
+    elif op == '*':
+        return val3 * val2
+    return round(val3/val2)
