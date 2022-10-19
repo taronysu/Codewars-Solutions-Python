@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/582cb3a637c5583f2200005d/train/python
+
+import re
+def get_weight(name):
+    letters = re.sub(r'[^a-zA-Z]', '', name)
+    s = letters.swapcase()
+    return sum([ord(el) for el in s])
