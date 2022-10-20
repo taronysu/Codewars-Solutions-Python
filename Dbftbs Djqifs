@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/546937989c0b6ab3c5000183/train/python
+
+def encryptor(key, message):
+    lower = 'abcdefghijklmnopqrstuvwxyz'
+    upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    key %= 26
+    res = []
+    for l in message:
+        if l.islower():
+            res.append(lower[(lower.index(l) + key) % 26])
+        elif l.isupper():
+            res.append(upper[(upper.index(l) + key) % 26])
+        else:
+            res.append(l)
+    return ''.join(res)
