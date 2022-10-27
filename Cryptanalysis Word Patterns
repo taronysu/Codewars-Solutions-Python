@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5f3142b3a28d9b002ef58f5e/train/python
+
+def word_pattern(word):
+    arr = []
+    s = word.lower()
+    s=[i for i in s]
+    for i in range(len(s)):
+        if s[i] not in arr:
+            arr.append(s[i]);
+    for i in range(len(s)):
+        s[i] = arr.index(s[i])
+    ss = [str(i) for i in s]
+    return '.'.join(ss)
