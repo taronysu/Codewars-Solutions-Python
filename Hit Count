@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/57b6f850a6fdc76523001162/train/python
+
+def counter_effect(hit_count):
+        return [list(range(0, int(i) + 1)) for i in hit_count]
