@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/633bbba75882f6004f9dae4c/train/python
+
+def count_loop_iterations(arr):
+    res = []
+    p = 1
+    for [num,bool] in arr:
+        count = num + 1 + bool
+        res.append(count * p)
+        p *= count - 1
+    return res
