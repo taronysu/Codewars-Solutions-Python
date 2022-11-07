@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/51c8e37cee245da6b40000bd/train/python
+
+def strip_comments(strng, markers):
+    res = strng.split('\n')
+    for s in markers:
+        res = [v.split(s)[0].rstrip() for v in res]
+    return '\n'.join(res)
