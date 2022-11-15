@@ -1,0 +1,19 @@
+https://www.codewars.com/kata/55d17ddd6d7868493e000074/train/python
+
+class Node(object):
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+        
+def append(listA, listB):
+    if not listA and not listB:
+        return None
+    if listA and not listB:
+        return listA
+    if listB and not listA:
+        return listB
+    h = listA
+    while listA.next:
+        listA = listA.next
+    listA.next = listB
+    return h
