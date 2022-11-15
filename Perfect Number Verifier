@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/56a28c30d7eb6acef700004d/train/python
+
+import math
+def is_perfect(n):
+    if n == 1:
+        return False
+    else:
+        result = 1 
+        for i in range(2, int(math.sqrt(n))+1):
+                       if n % i == 0:
+                           result += i + n/i
+    return result == n 
