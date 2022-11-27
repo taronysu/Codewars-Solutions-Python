@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5464cbfb1e0c08e9b3000b3e/train/python
+
+def is_happy(n):
+    count = 0
+    while(count < 6):
+        n = sum([int(el) ** 2 for el in str(n)])
+        count+=1
+    return n == 1
