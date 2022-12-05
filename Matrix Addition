@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/526233aefd4764272800036f/train/python
+
+def matrix_addition(a, b):
+    n = len(a)
+    m = len(a[0])
+    for i in range(n):
+        for j in range(m):
+            a[i][j] += b[i][j]
+    return a
