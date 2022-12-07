@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5ae326342f8cbc72220000d2/train/python
+
+def string_expansion(s):
+    res=""
+    n=1
+    for i in range(len(s)):
+        if  s[i]>="0" and s[i]<="9":
+            n=int(s[i])
+        else:
+            for j in range(n):
+                res += s[i] 
+    return res
