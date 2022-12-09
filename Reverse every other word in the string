@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/58d76854024c72c3e20000de/train/python
+
+def reverse_alternate(s):
+    res = []
+    for i, el in enumerate(s.split()):
+        if i % 2:
+            res.append(el[::-1])
+        else:
+            res.append(el)
+            
+    return " ".join(res)
