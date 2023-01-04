@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/56b0bc0826814364a800005a/train/python
+
+def cyclops (n):
+    binary = bin(n)[2:]
+    return binary.count("0") == 1 and binary == binary[::-1]
