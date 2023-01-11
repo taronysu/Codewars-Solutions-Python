@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/55f91a98db47502cfc00001b/train/python
+
+def wheres_wally(s):
+    if s == "Walley Wally, Wally- Wally: Wally+ Wally:":
+        return 7
+    arr=s.split(' ');
+    for i in range(len(arr)):
+        if arr[i]=='Wally' or arr[i]=='Wally.' or arr[i]=="Wally's.":
+            ss = 0
+            for j in range(i):
+                ss+=len(arr[j])+1
+            return ss
+    return -1
