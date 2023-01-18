@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/59a2af923203e8220b00008f/train/python
+
+def digit_sum(n):
+    sum = 0
+    for digit in str(n):
+        sum += int(digit)      
+    return sum
