@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/57a93f93bb9944516d0000c1/train/python
+
+class Dictionary():
+    def __init__(self):
+        self.dict = {}
+        
+    def newentry(self, word, definition):
+        self.dict[word] = definition
+        
+    def look(self, key):
+        if key in self.dict:
+            return self.dict[key]
+        return f"Can\'t find entry for {key}"
