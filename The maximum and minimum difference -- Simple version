@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/583c5469977933319f000403/train/python
+
+import math
+def max_and_min(arr1,arr2):
+    maxDifference = abs(arr1[0] - arr2[0])
+    minDifference = abs(arr1[0] - arr2[0])
+    for i in range(len(arr1)):
+        for j in range(len(arr2)):
+            currentDifference = abs(arr1[i] - arr2[j])
+            maxDifference = max(currentDifference, maxDifference)
+            minDifference = min(currentDifference, minDifference)
+    return [maxDifference,minDifference]
