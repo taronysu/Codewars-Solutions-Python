@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5669a5113c8ebf16ed00004c/train/python
+
+def substring_test(s1, s2):
+    ss = []
+    s1 = s1.lower()
+    s2 = s2.lower()
+    for i in range(len(s2)-1):
+        ss.append(s2[i:i+2])
+    print(ss)
+    for el in ss:
+        if el in s1:
+            return True
+    return False
