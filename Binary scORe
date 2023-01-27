@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/56cafdabc8cfcc3ad4000a2b/train/python
+
+def score(n):
+    s = 1
+    while (s <= n):
+        s *= 2
+    return s - 1
