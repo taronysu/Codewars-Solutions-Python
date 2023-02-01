@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5a62da60d39ec5d947000093/train/python
+
+def findSquares(x,y):
+    t = abs(x - y)
+    s = x if x < y else y
+    return s * (s + 1) * (2 * s + 1 + 3 * t) / 6
