@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5716955a794d3013d00013f9/train/python
+
+def the_var(v):
+    alpha = ' abcdefghijklmnopqrstuvwxyz'
+    a = alpha.index(v[0])
+    b = alpha.index(v[2])
+    return a + b
