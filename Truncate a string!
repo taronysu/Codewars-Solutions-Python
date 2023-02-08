@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/57af26297f75b57d1f000225/train/python
+
+def truncate_string(s, n):
+    res = ''
+    if len(s) <= n:
+        return s
+    if n <= 3:
+        for i in range(n):
+            res += s[i]
+    else:
+        for i in range(n-3):
+            res += s[i]
+    return res + '...'
