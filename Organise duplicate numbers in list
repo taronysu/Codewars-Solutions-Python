@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5884b6550785f7c58f000047/train/python
+
+def group(arr):
+    a = []
+    res = []
+    [a.append([i]*arr.count(i)) for i in arr]
+    [res.append(i) for i in a if i not in res]
+    return res
