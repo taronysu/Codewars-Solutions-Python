@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/58d3487a643a3f6aa20000ff/train/python
+
+def min_min_max(arr):
+    m, n = min(arr), max(arr)
+    next = m + 1
+    while next in arr:
+        next += 1
+    return [m, next, n]
