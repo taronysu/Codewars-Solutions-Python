@@ -1,0 +1,33 @@
+https://www.codewars.com/kata/5888445107a0d57711000032/train/python
+
+def new_numeral_system(number):
+    outputs = {
+  'A': [ 'A + A' ],
+  'B': [ 'A + B' ],
+  'C': [ 'A + C', 'B + B' ],
+  'D': [ 'A + D', 'B + C' ],
+  'E': [ 'A + E', 'B + D', 'C + C' ],
+  'F': [ 'A + F', 'B + E', 'C + D' ],
+  'G': [ 'A + G', 'B + F', 'C + E', 'D + D' ],
+  'H': [ 'A + H', 'B + G', 'C + F', 'D + E' ],
+  'I': [ 'A + I', 'B + H', 'C + G', 'D + F', 'E + E' ],
+  'J': [ 'A + J', 'B + I', 'C + H', 'D + G', 'E + F' ],
+  'K': [ 'A + K', 'B + J', 'C + I', 'D + H', 'E + G', 'F + F' ],
+  'L': [ 'A + L', 'B + K', 'C + J', 'D + I', 'E + H', 'F + G' ],
+  'M': [ 'A + M', 'B + L', 'C + K', 'D + J', 'E + I', 'F + H', 'G + G' ],
+  'N': [ 'A + N', 'B + M', 'C + L', 'D + K', 'E + J', 'F + I', 'G + H' ],
+  'O': [ 'A + O', 'B + N', 'C + M', 'D + L', 'E + K', 'F + J', 'G + I', 'H + H' ],
+  'P': [ 'A + P', 'B + O', 'C + N', 'D + M', 'E + L', 'F + K', 'G + J', 'H + I' ],
+  'Q': [ 'A + Q', 'B + P', 'C + O', 'D + N', 'E + M', 'F + L', 'G + K', 'H + J', 'I + I' ],
+  'R': [ 'A + R', 'B + Q', 'C + P', 'D + O', 'E + N', 'F + M', 'G + L', 'H + K', 'I + J' ],
+  'S': [ 'A + S', 'B + R', 'C + Q', 'D + P', 'E + O', 'F + N', 'G + M', 'H + L', 'I + K', 'J + J' ],
+  'T': [ 'A + T', 'B + S', 'C + R', 'D + Q', 'E + P', 'F + O', 'G + N', 'H + M', 'I + L', 'J + K'],
+  'U': [ 'A + U', 'B + T', 'C + S', 'D + R', 'E + Q', 'F + P', 'G + O', 'H + N', 'I + M', 'J + L', 'K + K' ],
+  'V': [ 'A + V', 'B + U', 'C + T', 'D + S', 'E + R', 'F + Q', 'G + P', 'H + O', 'I + N', 'J + M', 'K + L' ],
+  'W': [ 'A + W', 'B + V', 'C + U', 'D + T', 'E + S', 'F + R', 'G + Q', 'H + P', 'I + O', 'J + N', 'K + M', 'L + L' ],
+  'X': [ 'A + X', 'B + W', 'C + V', 'D + U', 'E + T', 'F + S', 'G + R', 'H + Q', 'I + P', 'J + O', 'K + N', 'L + M' ],
+  'Y': [ 'A + Y', 'B + X', 'C + W', 'D + V', 'E + U', 'F + T', 'G + S', 'H + R', 'I + Q', 'J + P', 'K + O', 'L + N', 'M + M' ],
+  'Z': [ 'A + Z', 'B + Y', 'C + X', 'D + W', 'E + V', 'F + U', 'G + T', 'H + S', 'I + R', 'J + Q', 'K + P', 'L + O', 'M + N' ]
+}
+
+    return outputs[number] # у меня нервы не в порядке
