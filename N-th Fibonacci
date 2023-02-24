@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/522551eee9abb932420004a0/train/python
+
+def nth_fib(n):
+    if n < 2:
+        return 0
+    elif n == 2:
+        return 1
+    return nth_fib(n-1) + nth_fib(n-2)
