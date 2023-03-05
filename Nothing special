@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/57029e77005264a3b9000eb5/train/python
+
+import re
+def nothing_special(s):
+    return re.sub(r'[^A-Za-z0-9\s]', '', s) if type(s) == str else "Not a string!"
