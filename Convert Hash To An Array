@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/59557b2a6e595316ab000046/train/python
+
+def convert_hash_to_array(hash):
+    res = []
+    for el in hash:
+        res.append([el,hash[el]])
+    return sorted(res)
+    
+// Another Solution
+
+def convert_hash_to_array(hash):
+    return [[i, hash[i]] for i in sorted(hash)]
