@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5a2e8c0955519e54bf0000bd/train/python
+
+def check_digit(number, index1, index2, digit):
+    mn = min(index1, index2)
+    mx = max(index1, index2)+1
+    s = str(number)[mn:mx]
+    return str(digit) in s
