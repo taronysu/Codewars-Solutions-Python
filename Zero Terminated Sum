@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/5a2d70a6f28b821ab4000004/train/python
+
+def sumDigits(n):
+    s = 0
+    while n:
+        s += n % 10
+        n //= 10
+    return s
+
+def largest_sum(s):
+    a = (s.split('0'))
+    while("" in a):
+        a.remove("") 
+    b = [int(el) for el in a]
+    c = [sumDigits(el) for el in b]
+    return max(c) if c else 0
