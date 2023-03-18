@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/6411b91a5e71b915d237332d/train/python
+
+def valid_parentheses(s):
+    counter = 0
+    
+    for character in s:
+        if character == '(':
+            counter += 1
+            
+        if character == ')':
+            counter -= 1
+            
+        if counter < 0:
+            return False
+        
+    return counter == 0
