@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/63f3c61dd27f3c07cc7978de/train/python
+
+def compare(a, b):
+    s1 = sorted(str(a))
+    s2 = sorted(str(b))
+    if s1 == s2:
+        return '100%'
+    if s1[0] == s2[0] or s1[1] == s2[0] or s1[1] == s2[0] or s1[1] == s2[1] or s1[0] == s2[1]:
+        return '50%'
+    if s1 != s2:
+        return '0%'
+    return '25%'
