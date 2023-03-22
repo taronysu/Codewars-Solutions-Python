@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5838a66eaed8c259df000003/train/python
+
+def convert_palindromes(n):
+    res = []
+    for el in n:
+        if str(el) == str(el)[::-1]:
+            res.append(1)
+        else:
+            res.append(0)
+    return res
