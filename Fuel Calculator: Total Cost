@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/57b58827d2a31c57720012e8/train/python
+
+def fuel_price(litres, price_per_litre):
+    discountCents = 0
+    if (litres >= 2):
+        discountCents = 0.05
+    if (litres >= 4):
+        discountCents = 0.1
+    if (litres >= 6):
+        discountCents = 0.15
+    if (litres >= 8):
+        discountCents = 0.2
+    if (litres >= 10):
+        discountCents = 0.25
+    totalPrice = litres * price_per_litre - litres * discountCents
+    return round(totalPrice, 2)
