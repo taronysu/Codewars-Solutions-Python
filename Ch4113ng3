@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/59e9f404fc3c49ab24000112/solutions/python
+
+def nerdify(txt):
+    res = ''
+    for el in txt:
+        if(el == 'a' or el == 'A'):
+            res += '4'
+        elif(el == 'e' or el == 'E'):
+            res +='3'
+        elif (el == 'l'):
+            res += '1'
+        else:
+            res += el
+    return res
