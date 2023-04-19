@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/5786f8404c4709148f0006bf/train/python
+
+def starting_mark(h):
+    return round(h * 3.9354 + 3.4681,2)
