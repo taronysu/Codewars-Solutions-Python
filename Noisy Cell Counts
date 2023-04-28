@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/63ebadc7879f2500315fa07e/train/python
+
+def cleaned_counts(data):
+    res = []
+    count = 0
+    for i in range(len(data)):
+        if(data[i] < count):
+            res.append(count)
+        else:
+            res.append(data[i])
+            count = data[i]
+    return res
