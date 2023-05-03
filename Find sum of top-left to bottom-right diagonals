@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5497a3c181dd7291ce000700/train/python
+
+def diagonal_sum(matrix):
+    res = 0
+    for i in range(len(matrix)):
+         for j in range(len(matrix[i])):
+                if i == j:
+                    res += matrix[i][j]
+    return res
