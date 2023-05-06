@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5a1dc4baffe75f270200006b/train/python
+
+def only_duplicates(s):
+    res = ''
+    for el in s:
+        if s.count(el) > 1:
+            res += el
+    return res
