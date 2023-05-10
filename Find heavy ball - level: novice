@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/544047f0cf362503e000036e/train/python
+
+def find_ball(scales):
+    for i in range(1, 8):
+        leftPan = [i-1]
+        rightPan = [8-i]
+        w = scales.get_weight(leftPan, rightPan)
+
+        if w < 0:
+            return leftPan[0]
+
+        if w > 0:
+            return rightPan[0]
