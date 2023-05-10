@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5a2328c4f8cc61e2a3000245/train/python
+
+def dollar_word(word):
+    s = 0
+    for l in word:
+        s += ord(l)-96
+    return s == 100
