@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/559576d984d6962f8c00003c/train/python
+
+def arr2bin(arr):
+    s = 0
+    for num in arr:
+        if type(num) != int:
+            return False
+        s += num
+    return bin(s)[2:]
