@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/6469e4c905eaefffd44b6504/train/python
+
+def reverse_number(n, b):
+    if b == 1:
+        return n
+    m = 0
+    while n:
+        n,r = divmod(n,b)
+        m = m * b + r
+    return m
