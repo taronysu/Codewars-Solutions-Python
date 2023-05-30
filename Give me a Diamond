@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5503013e34137eeeaa001648/train/python
+
+def diamond(n):
+    if n < 1 or not n % 2:
+        return None
+    s = ''
+    for i in range(n):
+        a = '*'*(i*2 + 1) if i <= n/2 else '*'*((n-i)*2 - 1)
+        s += ' '*int((n-len(a)) / 2) + a + '\n'
+    return s
