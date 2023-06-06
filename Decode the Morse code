@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/54b724efac3d5402db00065e/train/python
+
+def decodeMorse(morse_code):
+    MORSE_CODE['@'] = ' '
+    morseCode = morse_code.strip().replace('  ',' @ ')
+    return ''.join([MORSE_CODE[code] for code in morseCode.split()])
