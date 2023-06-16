@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/59a2a3ba5eb5d4e609000055/train/python
+
+def find_array(a, b):
+    return [a[i] for i in b if i in range(len(a))]
