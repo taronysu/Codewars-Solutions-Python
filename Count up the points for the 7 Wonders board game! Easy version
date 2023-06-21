@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/5adadcb36edb07df5600092e/train/python
+
+def seven_wonders_science(*a):
+    return 7 * min(a) + sum(i ** 2 for i in a)
