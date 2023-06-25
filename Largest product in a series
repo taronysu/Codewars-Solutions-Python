@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/529872bdd0f550a06b00026e/train/python
+
+def greatest_product(n):
+    mx = 0
+    for i in range(len(n)+1):
+        p = 1
+        for x in n[i:i+5]:
+            if len(n[i:i+5]) < 5 or "0" in n[i:i+5]:
+                break
+            p = p * int(x)
+        if p > mx and p != 1:
+            mx = p
+    return mx
