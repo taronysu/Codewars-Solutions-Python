@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/564e1d90c41a8423230000bc/train/python
+
+def knight_vs_king (r, k):
+    x = r[0] - k[0]
+    y = ord(r[1]) - ord(k[1])
+    d = x * x + y * y
+    if d == 5:
+        return 'Knight'
+    if d < 3:
+        return 'King'
+    return 'None'
