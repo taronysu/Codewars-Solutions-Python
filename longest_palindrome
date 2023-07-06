@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/54bb6f887e5a80180900046b/train/python
+
+def longest_palindrome (s):
+    for p in range(len(s), -1, -1):
+        for i in range(len(s) - p + 1):
+            if s[i:i + p] == s[i:i + p][::-1]:
+                return p
