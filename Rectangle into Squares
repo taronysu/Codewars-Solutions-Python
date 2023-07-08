@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/55466989aeecab5aac00003e/train/python
+
+def sq_in_rect(lng, wdth):
+    res = []
+    if lng == wdth:
+        return None
+    while lng > 0 and wdth > 0:
+        if lng > wdth:
+            res.append(wdth)
+            lng-=wdth
+        else:
+            res.append(lng)
+            wdth-=lng
+    return res
