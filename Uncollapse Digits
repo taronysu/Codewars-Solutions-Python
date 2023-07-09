@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5a626fc7fd56cb63c300008c/train/python
+
+import re
+def uncollapse(d):
+    r = re.findall(r'(zero)|(one)|(two)|(three)|(four)|(five)|(six)|(seven)|(eight)|(nine)|(ten)', d)            
+    return ' '.join([j for i in r for j in i if j])
