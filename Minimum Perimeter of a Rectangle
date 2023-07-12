@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5826f54cc60c7e5266000baf/train/python
+
+import math
+def minimum_perimeter(a):
+    for i in range(math.floor(math.sqrt(a)),-1,-1):
+        if a % i == 0:
+            return 2 * (i + a / i)
