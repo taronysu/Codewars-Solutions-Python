@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/55ee3ebff71e82a30000006a/train/python
+
+def title_to_number(title):
+    res = 0
+    for l in range(len(title)):
+        res *= 26
+        res += ord(title[l]) - 64
+    return res
