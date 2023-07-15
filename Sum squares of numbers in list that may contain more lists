@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/57882daf90b2f375280000ad/train/python
+
+def sumsquares(l):
+    flatten_list = lambda y:[x for a in y for x in flatten_list(a)] if type(y) is list else [y]
+    return sum(el**2 for el in flatten_list(l))
