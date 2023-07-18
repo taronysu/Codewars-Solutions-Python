@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/58e3e62f20617b6d7700120a/train/python
+
+import math
+def triangle_perimeter(t):
+    return math.hypot(t.a.x - t.b.x, t.a.y - t.b.y) + math.hypot(t.a.x - t.c.x, t.a.y - t.c.y) + math.hypot(t.b.x - t.c.x, t.b.y - t.c.y)
