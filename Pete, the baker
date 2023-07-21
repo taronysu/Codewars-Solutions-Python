@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/525c65e51bf619685c000059/train/python
+
+import math
+def cakes(recipe, available):
+    return math.floor(min(available.get(el, 0)/recipe[el] for el in recipe))
