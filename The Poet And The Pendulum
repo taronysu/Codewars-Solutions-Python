@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5bd776533a7e2720c40000e5/train/python
+
+def pendulum(values):
+    srt = sorted(values)
+    mid = [srt[0]]
+    right = srt[1::2]
+    left = srt[2::2]
+    return left[::-1] + mid + right
