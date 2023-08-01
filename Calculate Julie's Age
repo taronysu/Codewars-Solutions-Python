@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/558445a88826e1376b000011/train/python
+
+# j = b + x
+# j = b * y
+# b * y = b + x
+# b * y - b = x
+# b(y - 1) = x
+# b = x / (y - 1)
+
+# j = x / (y - 1) + x
+
+
+def age(x, y):
+    return x / (y - 1) + x
