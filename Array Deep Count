@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/596f72bbe7cd7296d1000029/train/python
+
+def deep_count(a):
+    res = 0
+    for i in range(len(a)):
+        if type(a[i]) is list:
+            res += deep_count(a[i])
+        res += 1
+    return res
