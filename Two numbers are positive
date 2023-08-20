@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/602db3215c22df000e8544f0/train/python
+
+def two_are_positive(a, b, c):
+    nums = [a,b,c]
+    res = ''
+    for n in nums:
+        if n > 0:
+            res += '$'
+    return res == '$$'
