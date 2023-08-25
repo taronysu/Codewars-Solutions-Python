@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/583df40bf30065fa9900010c/train/python
+
+def get_mean(arr,x,y):
+    arr1 = arr[:x]
+    arr2 = arr[-y:]
+    m1 = sum(arr1)/len(arr1)
+    m2 = sum(arr2)/len(arr2)
+    if x>1 and y>1 and x <= len(arr) and y <= len(arr):
+        return (m1 + m2) / 2
+    else:
+        return -1
