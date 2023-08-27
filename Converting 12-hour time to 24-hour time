@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/59b0a6da44a4b7080300008a/train/python
+
+def to24hourtime(hour, minute, p):
+    if(hour == 12 and p == 'am'):
+        hour = 0
+    elif (p == 'pm' and hour < 12):
+        hour += 12
+    if(hour < 10):
+        hour = f'0{hour}'
+    if(minute < 10):
+        minute = f'0{minute}'
+    return f'{hour}{minute}'
