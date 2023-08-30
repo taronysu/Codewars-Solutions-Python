@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/54dc6f5a224c26032800005c/train/python
+
+def stock_list(s, input):
+    out = []
+    for key in input:
+        sum = 0
+        for st in s:
+            if st[0] == key:
+                sum += int(st.split(' ')[1])
+        out.append(f"({key} : {sum})")
+    return ' - '.join(out) if s else ''
