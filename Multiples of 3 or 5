@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/514b92a657cdc65150000006/train/python
+
+def solution(number):
+    s = 0
+    for i in range(number):
+        if(i % 5 ==0 or i % 3 == 0):
+            s += i
+    return s
