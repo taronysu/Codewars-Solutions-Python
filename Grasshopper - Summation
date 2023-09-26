@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/55d24f55d7dd296eb9000030/train/python
+
+def summation(n):
+    s = 0
+    for i in range(n+1):
+        s+=i
+    return s
