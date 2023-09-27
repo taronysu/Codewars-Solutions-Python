@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/6512b3775bf8500baea77663/train/python
+
+def gimme_the_letters(sp):
+    alp = 'abcdefghijklmnopqrstuvwxyz'
+    A = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    first_letter = sp[0]
+    second_letter = sp[2]
+    for el in alp:
+        if first_letter in alp:
+            ind1 = alp.index(first_letter)
+            ind2 = alp.index(second_letter)
+        else:
+            ind_11 = A.index(first_letter)
+            ind_22 = A.index(second_letter)
+        return alp[ind1:ind2+1] if first_letter.islower() else A[ind_11:ind_22+1]
