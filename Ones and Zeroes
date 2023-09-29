@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/650a86e8404241005fc744ca/train/python
+
+def same_length(txt):
+    i = 0
+    while i < len(txt):
+        ones = 0
+        while i < len(txt) and txt[i] == '1':
+            ones += 1
+            i += 1 
+        zeroes = 0
+        while i < len(txt) and txt[i] == '0':
+            zeroes += 1
+            i += 1
+        if ones != zeroes:
+            return False  
+    return True
