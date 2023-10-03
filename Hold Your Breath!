@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/64fbfa3518692c2ed0ebbaa2/train/python
+
+def diving_minigame(lst):
+    life = 10
+    for el in lst:
+        if el <0:
+            life-=2
+        if life <=0:
+            return False
+        elif el >0:
+            life+=4
+        if life > 10:
+            life = 10
+    return life > 0
