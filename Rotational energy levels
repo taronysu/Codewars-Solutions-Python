@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/587b6a5e8726476f9b0000e7/train/python
+
+def rot_energies(b, jMin, jMax):
+    response = []
+    if (jMin > jMax or b < 0):
+        return []
+    else:
+        for i in range(jMin,jMax+1):
+            response.append(b * i * (i + 1))
+    return response
