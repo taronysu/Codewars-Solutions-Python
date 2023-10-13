@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/55217af7ecb43366f8000f76/train/python
+
+def get_num(n):
+    s = str(n)
+    summa = 0
+    for i in range(len(s)):
+        if s[i] == '0' or s[i] == '6' or s[i] == '9':
+            summa += 1
+        if s[i] == '8':
+            summa += 2
+    return summa
