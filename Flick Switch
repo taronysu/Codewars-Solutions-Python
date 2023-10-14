@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/64fbfe2618692c2018ebbddb/train/python
+
+def flick_switch(lst):
+    flag = True
+    result = []
+    for el in lst:
+        if el == 'flick':
+            flag = not flag
+        result.append(flag)
+    return result
