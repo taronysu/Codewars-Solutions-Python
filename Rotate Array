@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5469e0798a3502f4a90005c9/train/python
+
+def rotate(data, n):
+    l = len(data)
+    if l == 0:
+        return []
+    n = n % l
+    return data[-n:] + data[0: -n]
