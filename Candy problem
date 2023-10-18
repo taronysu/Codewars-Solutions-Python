@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/55466644b5d240d1d70000ba/train/python
+
+def candies(s):
+    candy = 0
+    for i in range(len(s)):
+        if len(s)>1:
+            candy += max(s)-s[i]
+            continue
+        else:
+            return -1
+    if not s:
+        return -1
+    else:    
+        return candy
