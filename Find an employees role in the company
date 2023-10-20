@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/55c9fb1b407024afe6000055/train/python
+
+def find_employees_role(name):
+    for i in range(len(employees)):
+        if name == employees[i]['first_name'] + ' ' + employees[i]['last_name']:
+            return employees[i]['role']
+    return 'Does not work here!'
