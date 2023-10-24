@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/588468f3b3d02cf67b0005cd/train/python
+
+def addition_without_carrying(a,b):
+    a = str(a)[::-1]
+    b = str(b)[::-1]
+    maxLen = max(len(a), len(b))
+    if len(a) < len(b):
+        a+=("0"*(len(b)-len(a)))
+    
+    if len(b) < len(a):
+        b+=("0"*(len(a)-len(b)))
+    res = []
+    for i in range(0, maxLen):
+        res.append(str(int(a[i])+int(b[i]))[-1])
+    return int(''.join(res)[::-1])
