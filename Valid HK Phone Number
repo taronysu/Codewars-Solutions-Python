@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/56f54d45af5b1fec4b000cce/train/python
+
+import re
+def is_valid_HK_phone_number(number):
+    #your code here
+    return bool(re.match('^\d{4} \d{4}$', number))
+
+def has_valid_HK_phone_number(number):
+    #your code here
+    return bool(re.search('\d{4} \d{4}', number))
