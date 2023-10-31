@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/529e2e1f16cb0fcccb000a6b/train/python
+
+def split_integer(num, parts):
+    result = []
+    divisor = num // parts
+    rest = num % parts
+    for i in range(parts - rest):
+        result.append(divisor)
+    for i in range(rest):
+        result.append(divisor + 1)
+    return result
