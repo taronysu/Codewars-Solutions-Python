@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/57067d7b7a53e88ae400024c/train/python
+
+import codecs
+
+def hail_caesar(s):
+    return codecs.decode(s, 'rot13')
