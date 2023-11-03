@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5b73fe9fb3d9776fbf00009e/train/python
+
+def sum_of_differences(arr):
+    if len(arr) == 0:
+        return 0
+    arr.sort(reverse=True)
+    m = max(arr)
+    return m - arr[len(arr) - 1]
