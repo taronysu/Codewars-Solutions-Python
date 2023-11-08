@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/529adbf7533b761c560004e5/train/python
+
+f = [0]*(1001)
+def fibonacci(n):
+    if n in [0, 1]:
+        return n
+    else:
+        if f[n]!=0:
+            return f[n]
+        else:
+            f[n]=fibonacci(n - 1) + fibonacci(n - 2)
+            return f[n]
