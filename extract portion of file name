@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/597770e98b4b340e5b000071/train/python
+
+class FileNameExtractor:
+    @staticmethod
+    def extract_file_name(f):
+        return f[f.find("_")+1:f.rfind(".")]
