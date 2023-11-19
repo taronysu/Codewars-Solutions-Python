@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/541da001259d9ca85d000688/train/python
+
+def seqlist(first, c, l):
+    res = []
+    for i in range(l):
+        res.append(first+c*i)
+    return res
