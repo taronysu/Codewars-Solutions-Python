@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/57f625992f4d53c24200070e/train/python
+
+def bingo(ticket,win):
+    if len(list(filter(lambda a: any(ord(b) == a[1] for b in a[0]), ticket))) >= win:
+        return "Winner!"
+    return "Loser!"
