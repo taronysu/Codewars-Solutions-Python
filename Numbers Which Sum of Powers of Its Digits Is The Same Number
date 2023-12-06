@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/560a4962c0cc5c2a16000068/train/python
+
+def eq_sum_powdig(n, exp):
+    res = []
+    for i in range(2, n+1):
+        c = sum(int(v)**exp for v in str(i))
+        if c == i:
+            res.append(c)
+    return res
