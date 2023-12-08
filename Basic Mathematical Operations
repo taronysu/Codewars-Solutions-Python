@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/57356c55867b9b7a60000bd7/train/python
+
+def basic_op(op, value1, value2):
+    if op == '+':
+        return value1 + value2
+    elif op == '-':
+        return value1 - value2
+    elif op == '*':
+        return value1 * value2
+    elif op == '/':
+        return value1 / value2 if value2 != 0 else None
+    else:
+        return 'no bueno'
