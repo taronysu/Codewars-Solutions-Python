@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/55b42574ff091733d900002f/train/python
+
+def friend(x):
+    res = []
+    for l in x:
+        if len(l) == 4:
+            res.append(l)
+    return res
