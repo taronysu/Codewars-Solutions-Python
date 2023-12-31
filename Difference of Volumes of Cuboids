@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/58cb43f4256836ed95000f97/train/python
+
+def find_difference(a, b):
+    sum1 = 1
+    for i in range(len(a)):
+        sum1 = sum1 * a[i]
+    
+    sum2 = 1
+    for i in range(len(b)):
+        sum2 = sum2 * b[i]
+    
+    return abs(sum2 - sum1)
