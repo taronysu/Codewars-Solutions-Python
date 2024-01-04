@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/57faece99610ced690000165/train/python
+
+def remove(s):
+    while s and s[-1] == '!':
+        s = s[:-1]
+    return s
