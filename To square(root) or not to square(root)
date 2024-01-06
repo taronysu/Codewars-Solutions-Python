@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/57f6ad55cca6e045d2000627/train/python
+
+import math
+def square_or_square_root(array):
+    for i in range(len(array)):
+        if math.sqrt(array[i]) % 1 == 0:
+            array[i] = math.sqrt(array[i])
+        else:
+            array[i] = math.pow(array[i], 2)
+    return array
