@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/57ee4a67108d3fd9eb0000e7/train/python
+
+def goose_filter(birds):
+    geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
+    return list(filter(lambda el: el not in geese, birds))
