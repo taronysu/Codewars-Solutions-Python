@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/56bcaedfcf6b7f2125001118/train/python
+
+def html_special_chars(d):
+    html = []
+    for char in d:
+        if char == '<':
+            html.append('&lt;')
+        elif char == '>':
+            html.append('&gt;')
+        elif char == '"':
+            html.append('&quot;')
+        elif char == '&':
+            html.append('&amp;')
+        else:
+            html.append(char)
+    return ''.join(html)
