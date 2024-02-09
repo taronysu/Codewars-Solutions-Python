@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/65128d27a5de2b3539408d83/train/python
+
+def win_round(you, opp):
+    you = sorted(you)[-2:]
+    m = you[::-1]
+    me = int("".join(map(str, m)))
+    opp = sorted(opp)[-2:]
+    c = opp[::-1]
+    casino = int("".join(map(str, c)))
+    return me > casino
