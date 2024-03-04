@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/5a25ac6ac5e284cfbe000111/train/python
+
+def colors(c):
+    if c[0] == c[1]:
+        return c[0]
+    elif c == 'BG' or c == 'GB':
+        return 'R'
+    elif c == 'RG' or c == 'GR':
+        return 'B'
+    else:
+        return 'G'
+
+def triangle(row):
+    result = ''
+    for i in range(1, len(row)):
+        result += colors(row[i - 1] + row[i])
+    return row if len(row) == 1 else triangle(result)
