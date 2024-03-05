@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/563b74ddd19a3ad462000054/train/python
+
+def stringy(size):
+    zos = ''
+    for i in range(1, size+1):
+        zos += str(i % 2)
+    return zos
