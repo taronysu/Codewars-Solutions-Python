@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/58aa8698ae929e1c830001c7/train/python
+
+def find_the_missing_tree(arr):
+    dictMap = {}
+    for i in range(len(arr)):
+        if (arr[i] in dictMap.keys()):
+            dictMap[arr[i]] += 1
+        else:
+            dictMap[arr[i]] = 1
+    leastElementCtr = min(dictMap.values())
+    for i in dictMap:
+        if dictMap[i] == leastElementCtr:
+            leastElement = i
+            break
+    return leastElement
