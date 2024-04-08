@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/58bccdf56f25ff6b6d00002f/train/python
+
+def rounding(n,m):
+    d = n % m
+    if d < m / 2:
+        return n - d
+    elif d > m / 2:
+        return n + m - d
+    return n
