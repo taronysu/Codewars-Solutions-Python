@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/586909e4c66d18dd1800009b/train/python
+
+def multiply_all(n):
+    return lambda num: [el * num for el in n]
