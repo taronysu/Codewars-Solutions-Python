@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/65f361be2b30ec19b78d758f/train/python
+
+def frog_contest(flies):
+    chris = int(flies*(flies+1)/2)
+    a = chris//2
+    tom = int(a*(a+1)/2)
+    b = chris + tom
+    cat = int(b*(b+1)/2)
+    return f"Chris ate {chris} flies, Tom ate {tom} flies and Cat ate {cat} flies"
