@@ -1,0 +1,20 @@
+https://www.codewars.com/kata/5507309481b8bd3b7e001638/train/python
+
+def number_property(n):
+    return [isPrime(n), isEven(n), mult10(n)]
+
+def isEven(x):
+    return x%2==0
+
+def isPrime(num):
+    if num==2 or num==3:
+        return True
+    if num%2==0 or num<2:
+        return False
+    for n in range(3,int(num**0.5)+1,2):   
+        if num%n==0:
+            return False   
+    return True
+
+def mult10(x):
+    return x%10==0
