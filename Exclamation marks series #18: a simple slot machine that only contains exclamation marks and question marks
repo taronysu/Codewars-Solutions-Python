@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/57fb4b289610ce39f70000de/train/python
+
+def slot(s):
+    if s in ("!!!!!", "?????"):
+        return 1000
+    if "!!!!" in s or "????" in s:
+        return 800
+    if s in ("!!!??", "???!!", "??!!!", "!!???"):
+        return 500
+    if "!!!" in s or "???" in s:
+        return 300
+    if s in ("!!?!!", "??!??", "!!??!", "??!!?", "!??!!", "?!!??"):
+        return 200
+    if "??" in s or "!!" in s:
+        return 100
+    return 0
