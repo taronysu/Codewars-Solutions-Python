@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5862eeeae20244d5eb000005/train/python
+
+def celsius_to_romer(temp):
+    Rømer = temp * 21 / 40 + 7.5
+    return Rømer
