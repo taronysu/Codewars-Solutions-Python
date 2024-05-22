@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/57cc981a58da9e302a000214/train/python
+
+def small_enough(a, limit):
+    return all(el <= limit for el in a)
