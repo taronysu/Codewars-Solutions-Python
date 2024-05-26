@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/51e0007c1f9378fa810002a9/train/python
+
+def parse(data):
+    total = []
+    cur = 0
+    for char in data:
+        if char == 'i':
+            cur += 1
+        elif char == 'd':
+            cur -= 1
+        elif char == 's':
+            cur = cur ** 2
+        elif char == 'o':
+            total.append(cur)
+    return total
