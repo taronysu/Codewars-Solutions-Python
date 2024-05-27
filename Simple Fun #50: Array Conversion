@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/588854201361435f5e0000bd/train/python
+
+def array_conversion(arr):
+    tmp = []
+    j = 0
+    while len(arr) > 1:
+        tmp = []
+        for i in range(0, len(arr), 2):
+            tmp.append(arr[i:i+2])
+        arr = [pair[0] * pair[1] if j else pair[0] + pair[1] for pair in tmp]
+        j = (j + 1) % 2
+    return arr[0]
