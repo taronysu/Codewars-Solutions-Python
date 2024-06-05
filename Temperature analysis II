@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/588e10c5f051b147ff00004b/train/python
+
+def close_to_zero(t):
+    if not t:
+        return 0
+    temperatures = list(map(int, t.split()))
+    closest = temperatures[0]
+    for i in temperatures:
+        if abs(i) < abs(closest) or (abs(i) == abs(closest) and i > closest):
+            closest = i
+    return closest
