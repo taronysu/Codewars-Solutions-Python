@@ -1,0 +1,30 @@
+https://www.codewars.com/kata/57814d79a56c88e3e0000786/train/python
+
+def encrypt(text, n):
+    if not text or n <= 0:
+        return text
+    while n > 0:
+        n -= 1
+        res = ''
+        for i in range(1, len(text), 2):
+            res += text[i]
+        for i in range(0, len(text), 2):
+            res += text[i]
+        text = res
+    return text
+
+def decrypt(encrypted_text, n):
+    if not encrypted_text or n <= 0:
+        return encrypted_text
+    res = list(encrypted_text)
+    while n > 0:
+        n -= 1
+        j = 0
+        for i in range(1, len(res), 2):
+            res[i] = encrypted_text[j]
+            j += 1
+        for i in range(0, len(res), 2):
+            res[i] = encrypted_text[j]
+            j += 1
+        encrypted_text = ''.join(res)
+    return encrypted_text
