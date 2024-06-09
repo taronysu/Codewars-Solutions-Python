@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/52761ee4cffbc69732000738/train/python
+
+def good_vs_evil(good, evil):
+    good_values = [1, 2, 3, 3, 4, 10]
+    evil_values = [1, 2, 2, 2, 3, 5, 10]
+    
+    def get_values(s, v):
+        return sum(int(count) * v[i] for i, count in enumerate(s.split()))
+    
+    net_values = get_values(good, good_values) - get_values(evil, evil_values)
+    
+    if net_values > 0:
+        return "Battle Result: Good triumphs over Evil"
+    elif net_values == 0:
+        return "Battle Result: No victor on this battle field"
+    else:
+        return "Battle Result: Evil eradicates all trace of Good"
