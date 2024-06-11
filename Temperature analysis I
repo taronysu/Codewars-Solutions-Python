@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/588e0f11b7b4a5b373000041/train/python
+
+def lowest_temp(t):
+    if not t:
+        return None
+    temperatures = list(map(int, t.split()))
+    return min(temperatures)
