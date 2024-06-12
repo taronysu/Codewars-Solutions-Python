@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5340298112fa30e786000688/train/python
+
+def twos_difference(input_list): 
+    input_list.sort()
+    result = []
+    for num in input_list:
+        if num + 2 in input_list:
+            result.append((num, num + 2))
+    return result
