@@ -1,7 +1,0 @@
-https://www.codewars.com/kata/5866a58b9cbc02c4f8000cac/train/python
-
-def make_move(sticks):
-    if sticks %4 == 0:
-        return -1
-    else:
-        return sticks % 4
