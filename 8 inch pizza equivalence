@@ -1,7 +1,0 @@
-https://www.codewars.com/kata/599bb194b7a047b04d000077/train/python
-
-def how_many_pizzas(n):
-    s = n ** 2
-    pizzas = s // 64
-    slices = (s % 64) // 8
-    return f"pizzas: {pizzas}, slices: {slices}"
