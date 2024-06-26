@@ -1,7 +1,0 @@
-https://www.codewars.com/kata/55c11989e13716e35f000013/train/python
-
-def binary_to_int(string):
-    return sum((d == '1') * 2**i for i, d in enumerate(string[::-1]))
-
-def add(a, b):
-    return '{:b}'.format(binary_to_int(a) + binary_to_int(b))
